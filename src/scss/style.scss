@@ -2,7 +2,7 @@
 @include reset(); 
 
 // Include breakpoints badge
-body { @include screen-media(); }
+// body { @include screen-media(); }
 
 // Import media-query helper
 @import "../../node_modules/include-media/dist/_include-media.scss";
@@ -39,7 +39,15 @@ $breakpoints: (
 	// "../../node_modules/animate-scss/_zooming-entrances/zooming-entrances.scss";
 
 
-// @include font-face("Roboto-Black", "RBBL");
+@include font-face("Montserrat-Regular", "MR");
+@include font-face("Montserrat-Medium", "MM");
+@include font-face("Montserrat-Bold", "MB");
+@include font-face("PhonkSans-Bold", "PB");
+@include font-face("PhonkSans-Light", "PL");
+@include font-face("PhonkSans-Medium", "PM");
+@include font-face("PhonkSans-Regular", "PR");
+@include font-face("PhonkSans-SemiBold", "PSB");
+@include font-face("PhonkSans-ExtraBold", "PEB");
 // @import "../../node_modules/swiper/swiper";
 
 // Import BEM blocks scss
@@ -49,7 +57,7 @@ body, html {
 	box-sizing: border-box;
 	font-size: #{$basesize}px;
 	line-height: 1.2;
-	font-family: sans-serif;
+	font-family: "MM", sans-serif;
 	background-color: #fafafa;
 	min-height: 100vh;
 	display: flex;

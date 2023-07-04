@@ -1,0 +1,64 @@
+.button {
+	$self: &;
+	@extend %reset-button;
+	box-sizing: border-box;
+	font-family: "PB", sans-serif;
+	border-radius: 100px;
+	padding: 12px 40px;
+	font-size: 12px;
+	line-height: 1.0;
+	display: inline-flex;
+	align-items: center;
+
+	&::before {
+		display: none;
+		content: '';
+		height: 14px;
+		width: 18px;
+		margin-right: 10px;
+		background-color: transparent;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+
+	&_shadow {
+		box-shadow: 0px 5px 17px 0px rgba(79, 67, 96, 0.3);
+	}
+
+	&_fill-white {
+		background-color: #fff;
+		border: 2px solid #fff;
+	}
+
+	&_fill-yellow {
+		background-color: #FFC939;
+		border: 2px solid #FFC939;
+	}
+
+	&_outline-green {
+		border: 2px solid #32C3C6;
+	}
+
+	&_outline-yellow {
+		border: 2px solid #FFC939;
+	}
+
+	&_icon-tgm::before {
+		background-image: url('#{$images-path}icons-sprite.svg#icon-tgm-view-dark');
+		display: block;
+		width: 16px;
+	}
+
+	&_icon-back::before {
+		background-image: url('#{$images-path}icons-sprite.svg#icon-back-view-dark');
+		display: block;
+		width: 18px;
+	}
+
+	&_icon-geo::before {
+		background-image: url('#{$images-path}icons-sprite.svg#icon-geo-view-dark');
+		display: block;
+		width: 12px;
+	}
+}

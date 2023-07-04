@@ -1,0 +1,147 @@
+.dummy {
+	$self: &;
+	box-sizing: border-box;
+	padding-top: 60px;
+	min-height: calc(100vh - 60px);
+	display: flex;
+	align-items: center;
+
+	&__inner {
+		box-sizing: border-box;
+		max-width: 830px;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin: 0 auto;
+		
+		@include media('<=xxs') {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+
+	&__top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 60px;
+		
+		@include media('<=xxs') {
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-bottom: 45px;
+		}
+	}
+
+	&__tel {
+		text-decoration: none;
+		white-space: nowrap;
+		margin-right: 16px;
+
+		span {
+			display: block;
+
+			&:nth-child(1) {
+				font-family: "PL", sans-serif;
+				margin-bottom: 4px;
+				font-size: 10px;
+				color: #704C9F;
+			}
+			
+			&:nth-child(2) {
+				font-family: "PB", sans-serif;
+				font-size: 16px;
+				color: #2F2D68;
+			}
+		}
+
+		@include media('<=xxs') {
+			margin: 0;
+		}
+	}
+
+	&__logo {
+
+		@include media('<=xxs') {
+			order: -1;
+			margin-bottom: 32px;
+		}
+	}
+
+	&__title {
+		font-family: "PEB", sans-serif;
+		margin-bottom: 10px;
+		text-align: center;
+		color: #32C3C6;
+		font-size: 40px;
+		
+		@include media('<=xxs') {
+			font-size: 36px;
+		}
+		
+		@include media('<=xxxs') {
+			font-size: 30px;
+		}
+	}
+	
+	&__subtitle {
+		font-family: "PEB", sans-serif;
+		margin-bottom: 40px;
+		text-align: center;
+		color: #2F2D68;
+		font-size: 28px;
+		
+		@include media('<=xxs') {
+			font-size: 24px;
+		}
+		
+		@include media('<=xxxs') {
+			font-size: 20px;
+		}
+	}
+
+	&__text {
+		font-size: 14px;
+		line-height: 1.3;
+		margin-bottom: 80px;
+		
+		p {
+			font-family: "MR", sans-serif;
+			margin-bottom: 15px;
+		}
+		
+		span {
+			font-family: "MM", sans-serif;
+		}
+		
+		strong {
+			font-family: "MB", sans-serif;
+		}
+		
+		a {
+			font-family: "MB", sans-serif;
+			color: #32C3C6;
+
+			@include media('<=xxs') {
+				display: block;
+			}
+		}
+
+		@include media('<=xxs') {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+
+		@include media('<=xxs') {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__button {
+		margin: 0 15px 15px;
+	}
+}
