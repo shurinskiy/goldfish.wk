@@ -65,6 +65,6 @@
 		"from": "src/**/*.html",
 		"to": "src/blocks",
 		"js": "src/js/blocks.js",
-		"omit": "@@,js-,active,opened,header"
+		"omit": "@@,js-,active,opened"
 	}
 }
