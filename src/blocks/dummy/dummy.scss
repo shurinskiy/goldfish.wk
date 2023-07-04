@@ -51,6 +51,11 @@
 				font-family: "PB", sans-serif;
 				font-size: 16px;
 				color: #2F2D68;
+				transition: color 0.3s;
+	
+				&:hover {
+					color: #32C3C6;
+				}
 			}
 		}
 
@@ -142,6 +147,10 @@
 	}
 
 	&__button {
+		transition: box-shadow 0.3s;
 
+		&:hover {
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+		}
 	}
 }

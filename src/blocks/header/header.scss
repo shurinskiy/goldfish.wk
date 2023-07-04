@@ -1,0 +1,153 @@
+.header {
+	$self: &;
+	background-color: $fade;
+	border-radius: 0 0 40px 40px;
+	padding-bottom: 11px;
+	padding-top: 11px;
+	
+	@include media('<=sm') {
+		padding-bottom: 8px;
+		padding-top: 8px;
+		border-radius: 0;
+		background-color: $primary;
+	}
+	
+	&__inner {
+		display: flex;
+		align-items: center;
+		color: $primary;
+	}
+
+	&__logo {
+		min-width: 90px;
+		margin-right: 10px;
+
+		@include media('<=sm') {
+			display: none;
+		}
+	}
+
+	&__navi {
+		margin-left: auto;
+		max-width: 500px;
+		width: 100%;
+
+		a {
+			color: inherit;
+			text-decoration: none;
+		}
+		
+		@include media('<=md') {
+			max-width: 440px;
+		}
+
+		@include media('<=sm') {
+			width: 100%;
+			height: 100vh;
+			height: calc(var(--vh, 1vh) * 100);
+			position: fixed;
+			z-index: 12;
+			top: 0;
+			left: -350px; 
+			max-width: 350px;
+			transition: left 0.2s linear;
+	
+			&.opened {
+				left: 0;
+			}
+		}
+	}
+
+	&__contacts {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		max-width: 280px;
+		width: 100%;
+		
+		@include media('<=md') {
+			max-width: 250px;
+		}
+	}
+
+	&__button {
+		color: inherit;
+		text-decoration: none;
+		display: inline-flex;
+		align-items: center;
+		white-space: nowrap;
+		flex-shrink: 0;
+		font-family: "PM", sans-serif;
+		margin-left: 16px;
+		font-size: 10px;
+
+		&::before {
+			display: block;
+			content: '';
+			height: 8px;
+			width: 10px;
+			margin-right: 5px;
+			flex-shrink: 0;
+			background-color: transparent;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+		}
+		
+		&_tel::before {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-phone-view-accent');
+			width: 8px;
+			
+			@include media('<=sm') {
+				background-image: url('#{$images-path}icons-sprite.svg#icon-phone-view-white');
+				margin: 0;
+			}
+		}
+		
+		&_tgm::before {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-tgm-view-accent');
+			
+			@include media('<=sm') {
+				background-image: url('#{$images-path}icons-sprite.svg#icon-tgm-view-white');
+				margin: 0;
+			}
+		}
+		
+		@include media('<=md') {
+			margin-left: 8px;
+		}
+		
+		@include media('<=sm') {
+			width: 47px;
+			height: 47px;
+			background-color: rgba(255, 255, 255, 0.1);
+			border-radius: 50%;
+			margin-left: 16px;
+			justify-content: center;
+
+			span {
+				display: none;
+			}
+
+			&::before {
+				width: 21px;
+				height: 17px;
+			}
+		}
+	}
+
+	&__navi-toggle {
+		display: none;
+		@extend %reset-button;
+		width: 47px;
+		height: 47px;
+		background: url('#{$images-path}icons-sprite.svg#icon-menu-view-white') center / 21px 15px no-repeat rgba(255, 255, 255, 0.1);
+		border-radius: 50%;
+		margin-right: auto;
+		flex-shrink: 0;
+
+		@include media('<=sm') {
+			display: block;
+		}
+	}
+}

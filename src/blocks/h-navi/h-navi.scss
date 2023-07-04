@@ -1,0 +1,85 @@
+.h-navi {
+	$self: &;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-family: "PB", sans-serif;
+	
+	@include media('<=sm') {
+		display: block;
+		background-color: rgba(255, 255, 255, 0.9);
+		padding: 40px 20px 20px;
+		box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.075);
+		backdrop-filter: blur(10px);
+	}
+
+	&__close {
+		@extend %reset-button;
+		display: none;
+		width: 38px;
+		height: 38px;
+		position: absolute;
+		z-index: 1;
+		top: 10px;
+		right: 10px;
+		background: url('#{$images-path}icons-sprite.svg#icon-close-view-dark') center / 20px 20px no-repeat transparent;
+
+		@include media('<=sm') {
+			display: block;
+		}
+	}
+
+	&__menu {
+		display: flex;
+		font-size: 10px;
+
+		@include media('<=sm') {
+			font-size: 16px;
+			flex-flow: column nowrap;
+			align-items: flex-start;		
+			flex-grow: 1;
+			overflow: auto;
+			margin-bottom: 10px;
+		}
+	}
+
+	&__link {
+		margin: 0 14px;
+		white-space: nowrap;
+		transition: color 0.3s;
+	
+		&:hover {
+			color: #32C3C6;
+		}
+	
+		@include media('<=md') {
+			margin: 0 8px;
+		}
+		
+		@include media('<=sm') {
+			width: 100%;
+			margin: 0;
+			padding: 10px 0;
+		}
+	}
+
+	&__lang {
+		font-family: "PM", sans-serif;
+		font-size: 10px;
+		
+		a {
+			color: inherit;
+			padding: 2px 5px;
+
+			&.active {
+				background-color: $secondary;
+				border-radius: 6px;
+			}
+		}
+
+		@include media('<=sm') {
+			font-size: 16px;
+		}
+	}
+}

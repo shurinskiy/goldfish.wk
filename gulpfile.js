@@ -138,7 +138,8 @@ function icons() {
 		name: 'icons-sprite',
 		monochrome: {
 			dark: '#232B5B',
-			white: '#ffffff'
+			white: '#ffffff',
+			accent: '#32BFC6'
 		}
 	}))
 	.pipe(gulp.dest(pth.pbl.img))
