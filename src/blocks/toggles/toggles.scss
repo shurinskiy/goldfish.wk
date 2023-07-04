@@ -1,0 +1,49 @@
+.toggles {
+	$self: &;
+	margin-bottom: 100px;
+	
+	&__inner {
+		border-top: 2px solid #F5F9FB;
+		padding-top: 20px;
+	}
+
+	&__top {
+		padding-bottom: 60px;
+	}
+
+	&__info {
+		font-family: "PB", sans-serif;
+		color: $light;
+		font-size: 14px;
+		padding: 10px 0;
+	}
+
+	&__icon {
+
+	}
+
+	&__buttons {
+		background-color: $fade;
+		box-sizing: border-box;
+		border-radius: 30px;
+		height: 80px;
+		display: flex;
+		flex-shrink: 0;
+		padding: 10px;
+	}
+
+	&__button {
+		@extend %reset-button;
+		font-family: "PB", sans-serif;
+		color: $light;
+		padding: 10px;
+		width: 50%;
+		border-radius: 24px;
+		
+		&.active {
+			color: $secondary;
+			background-color: #fff;
+			box-shadow: 0px 0px 15px 0px rgba(129, 144, 172, 0.2);
+		}
+	}
+}

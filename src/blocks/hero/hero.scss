@@ -1,0 +1,51 @@
+.hero {
+	$self: &;
+	
+	&__inner {
+		padding-top: 80px;
+		padding-bottom: 60px;
+		background: url('#{$images-path}bubble.png') top 60px left 55px / 40px 44px no-repeat, url('#{$images-path}bubble.png') bottom 35% left 145px / 28px 32px no-repeat, url('#{$images-path}bubble.png') top 50px right 120px / 78px 87px no-repeat, url('#{$images-path}bubble.png') bottom 55% right 80px / 40px 45px no-repeat;
+		position: relative;
+		
+		&::before {
+			display: block;
+			content: '';
+			width: 237px;
+			height: 203px;
+			background: url('#{$images-path}hero-fish.png') center / contain no-repeat transparent;
+			position: absolute;
+			top: 45%;
+			left: -70px;
+		}
+	}
+
+	&__title {
+		font-family: "PEB", sans-serif;
+		color: $secondary;
+		font-size: 40px;
+		position: relative;
+		display: inline-block;
+		padding: 20px 35px 0 100px;
+		margin-bottom: 20px;
+		
+		&::before {
+			display: block;
+			content: '#1 best helper in Pattaya';
+			font-family: "PL", sans-serif;
+			font-size: 10px;
+			height: 35px;
+			width: 240px;
+			background: url('#{$images-path}hero-title-info-ic.png') right bottom / auto no-repeat transparent;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+	
+	&__text {
+		font-family: "PEB", sans-serif;
+		color: $primary;
+		font-size: 28px;
+		padding-left: 200px;
+	}
+}

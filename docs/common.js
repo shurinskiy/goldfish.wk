@@ -20,6 +20,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var scro
 
 /***/ }),
 
+/***/ "./src/blocks/toggles/toggles.js":
+/*!***************************************!*\
+  !*** ./src/blocks/toggles/toggles.js ***!
+  \***************************************/
+/***/ (() => {
+
+eval("(function () {})();//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvYmxvY2tzL3RvZ2dsZXMvdG9nZ2xlcy5qcyIsIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsid2VicGFjazovL2d1bHAtc2Nzcy1zdGFydGVyLy4vc3JjL2Jsb2Nrcy90b2dnbGVzL3RvZ2dsZXMuanM/Njc1MCJdLCJzb3VyY2VzQ29udGVudCI6WyIoKCkgPT4ge1xuXG5cbn0pKCk7XG4iXSwibWFwcGluZ3MiOiJBQUFBLENBQUMsWUFBTSxDQUdQLENBQUMsRUFBRSxDQUFDIn0=\n//# sourceURL=webpack-internal:///./src/blocks/toggles/toggles.js\n");
+
+/***/ }),
+
 /***/ "./src/js/blocks.js":
 /*!**************************!*\
   !*** ./src/js/blocks.js ***!
@@ -27,9 +37,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var scro
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _blocks_header_header_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../blocks/header/header.js */ "./src/blocks/header/header.js");
-
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _blocks_header_header_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../blocks/header/header.js */ \"./src/blocks/header/header.js\");\n/* harmony import */ var _blocks_toggles_toggles_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../blocks/toggles/toggles.js */ \"./src/blocks/toggles/toggles.js\");\n/* harmony import */ var _blocks_toggles_toggles_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_blocks_toggles_toggles_js__WEBPACK_IMPORTED_MODULE_1__);\n\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvanMvYmxvY2tzLmpzIiwibWFwcGluZ3MiOiI7Ozs7QUFDb0MiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9ndWxwLXNjc3Mtc3RhcnRlci8uL3NyYy9qcy9ibG9ja3MuanM/NWUzZSJdLCJzb3VyY2VzQ29udGVudCI6WyJcclxuaW1wb3J0IFwiLi4vYmxvY2tzL2hlYWRlci9oZWFkZXIuanNcIjtcclxuaW1wb3J0IFwiLi4vYmxvY2tzL3RvZ2dsZXMvdG9nZ2xlcy5qc1wiOyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/js/blocks.js\n");
 
 /***/ }),
 
