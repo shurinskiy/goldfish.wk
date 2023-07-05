@@ -42,6 +42,7 @@ export const menuToggle = (menu, toggles, options = {}) => {
 			this.options = {
 				class: 'opened',
 				globalClose: true,
+				widthOffset: false,
 				...options
 			};
 
@@ -58,10 +59,13 @@ export const menuToggle = (menu, toggles, options = {}) => {
 			menu.classList.add(`${this.options.class}`);
 	
 			if(typeof this.options.scrollLock !== 'undefined') {
-				const maxw = parseInt(getComputedStyle(menu).maxWidth);
-				const scrollw = this.options.scrollLock.getPageScrollBarWidth();
-				
-				Object.assign(menu.style, { maxWidth: maxw + scrollw + 'px' });
+
+				if(this.options.widthOffset) {
+					const maxw = parseInt(getComputedStyle(menu).maxWidth);
+					const scrollw = this.options.scrollLock.getPageScrollBarWidth();
+					Object.assign(menu.style, { maxWidth: maxw + scrollw + 'px' });
+				}
+					
 				this.options.scrollLock.disablePageScroll();
 			}
 

@@ -52,7 +52,8 @@
 	"dependencies": {
 		"jquery": "^3.6.0",
 		"scroll-lock": "^2.1.5",
-		"swiped-events": "^1.1.7"
+		"swiped-events": "^1.1.7",
+		"swiper": "^10.0.3"
 	},
 	"externalJs": {
 		"jquery": "dist/jquery.min.js"
@@ -67,6 +68,6 @@
 		"from": "src/**/*.html",
 		"to": "src/blocks",
 		"js": "src/js/blocks.js",
-		"omit": "@@,js-,active,opened"
+		"omit": "@@,js-,active,opened,swiper"
 	}
 }

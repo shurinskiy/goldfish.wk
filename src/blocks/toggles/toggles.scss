@@ -1,25 +1,18 @@
 .toggles {
 	$self: &;
-	margin-bottom: 100px;
+	margin-bottom: 60px;
 	
 	&__inner {
 		border-top: 2px solid #F5F9FB;
-		padding-top: 20px;
 	}
 
-	&__top {
+	&__cap {
 		padding-bottom: 60px;
-	}
-
-	&__info {
 		font-family: "PB", sans-serif;
-		color: $light;
-		font-size: 14px;
-		padding: 10px 0;
-	}
-
-	&__icon {
-
+		color: $primary;
+		font-size: 16px;
+		padding: 28px 0;
+		text-align: center;
 	}
 
 	&__buttons {

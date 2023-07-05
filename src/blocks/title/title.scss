@@ -1,0 +1,12 @@
+.title {
+	$self: &;
+	color: $secondary;
+	font-family: "PB", sans-serif;
+	font-size: 40px;
+	
+	&_subtitle {
+		color: $primary;
+		font-family: "PSB", sans-serif;
+		font-size: 24px;
+	}
+}

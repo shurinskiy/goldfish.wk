@@ -1,0 +1,60 @@
+.card-b {
+	$self: &;
+	background-color: $fade;
+	border-radius: 30px;
+
+	&__image {
+
+	}
+
+	&__body {
+		box-sizing: border-box;
+		padding: 20px;		
+	}
+
+	&__title {
+		font-family: "PB", sans-serif;
+		margin-bottom: 10px;
+		font-size: 14px;
+		color: $primary;
+	}
+	
+	&__text {
+		font-family: "MR", sans-serif;
+		margin-bottom: 14px;
+		font-size: 12px;
+		color: $primary;
+	}
+
+	&__button {
+
+	}
+
+	&__bottom {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		&_buttons {
+			padding-top: 18px;
+			padding-bottom: 8px;
+			justify-content: center;
+		}
+	}
+
+	&__b-date {
+		font-family: "PL", sans-serif;
+		font-size: 10px;
+		color: #9FA2B1;
+	}
+
+	&__b-price {
+		font-family: "PB", sans-serif;
+		background-color: #fff;
+		border-radius: 10px;
+		color: $secondary;
+		line-height: 1.0;
+		padding: 4px 8px;
+		font-size: 16px;
+	}
+}

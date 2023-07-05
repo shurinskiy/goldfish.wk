@@ -1,0 +1,55 @@
+.faq {
+	$self: &;
+	margin-bottom: 80px;
+
+	&__inner {
+
+	}
+
+	&__title {
+		margin-bottom: 80px;
+	}
+
+	&__items {
+		counter-reset: faq_ctr;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 40px 25px;
+	}
+
+	&__item {
+		padding-left: 100px;
+		position: relative;
+
+		&::before {
+			display: block;
+			counter-increment: faq_ctr;
+			content: counter(faq_ctr)".";
+			color: $accent;
+			font-family: "PB", sans-serif;
+			font-size: 64px;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+
+	&__i-title {
+		font-family: "PSB", sans-serif;
+		text-transform: uppercase;
+		margin-bottom: 6px;
+		font-size: 18px;
+		color: $primary;
+	}
+	
+	&__i-text {
+		font-family: "MM", sans-serif;
+		font-size: 14px;
+		color: $primary;
+		
+		em {
+			font-family: "MSB", sans-serif;
+			font-style: italic;
+		}
+	}
+}

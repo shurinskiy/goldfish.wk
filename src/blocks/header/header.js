@@ -27,7 +27,4 @@ import { menuToggle } from "../../js/libs/menuToggle";
 		});
 	});
 
-	// для совместимости со скрывающимся сайдбаром
-	document.querySelector('.aside__toggle')?.addEventListener('click', (e) => menu.menuClose());
-
 })();

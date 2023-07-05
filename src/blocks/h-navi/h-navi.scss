@@ -3,27 +3,44 @@
 	box-sizing: border-box;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 	font-family: "PB", sans-serif;
+	color: $primary;
 	
 	@include media('<=sm') {
-		display: block;
-		background-color: rgba(255, 255, 255, 0.9);
-		padding: 40px 20px 20px;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		background-color: rgba(14, 17, 46, 0.95);
+		padding: 20px;
 		box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.075);
-		backdrop-filter: blur(10px);
+		backdrop-filter: blur(4px);
+	}
+
+	&__inner {
+		box-sizing: border-box;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	
+		@include media('<=sm') {
+			display: flex;
+			flex-flow: column nowrap;
+			max-height: 470px;
+		}
 	}
 
 	&__close {
 		@extend %reset-button;
 		display: none;
-		width: 38px;
-		height: 38px;
+		width: 47px;
+		height: 47px;
+		border-radius: 50%;
 		position: absolute;
 		z-index: 1;
 		top: 10px;
-		right: 10px;
-		background: url('#{$images-path}icons-sprite.svg#icon-close-view-dark') center / 20px 20px no-repeat transparent;
+		right: 30px;
+		background: url('#{$images-path}icons-sprite.svg#icon-close-view-white') center / 19px 19px no-repeat rgba(255, 255, 255, 0.1);
 
 		@include media('<=sm') {
 			display: block;
@@ -33,14 +50,12 @@
 	&__menu {
 		display: flex;
 		font-size: 10px;
+		margin-right: 5px;
 
 		@include media('<=sm') {
 			font-size: 16px;
 			flex-flow: column nowrap;
-			align-items: flex-start;		
-			flex-grow: 1;
-			overflow: auto;
-			margin-bottom: 10px;
+			margin-bottom: 60px;
 		}
 	}
 
@@ -48,6 +63,8 @@
 		margin: 0 14px;
 		white-space: nowrap;
 		transition: color 0.3s;
+		color: inherit;
+		text-decoration: none;
 	
 		&:hover {
 			color: #32C3C6;
@@ -58,9 +75,11 @@
 		}
 		
 		@include media('<=sm') {
+			color: #fff;
 			width: 100%;
 			margin: 0;
 			padding: 10px 0;
+			text-align: center;
 		}
 	}
 
@@ -70,6 +89,7 @@
 		
 		a {
 			color: inherit;
+			text-decoration: none;
 			padding: 2px 5px;
 
 			&.active {
@@ -79,7 +99,88 @@
 		}
 
 		@include media('<=sm') {
+			font-family: "PL", sans-serif;
+			color: #fff;
 			font-size: 16px;
+			margin-top: auto;
+			order: 1;
+		}
+	}
+
+	&__contacts {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+
+		@include media('<=sm') {
+			display: block;
+		}
+	}
+
+	&__button {
+		color: inherit;
+		text-decoration: none;
+		display: inline-flex;
+		align-items: center;
+		white-space: nowrap;
+		flex-shrink: 0;
+		font-family: "PM", sans-serif;
+		line-height: 1.0;
+		margin-left: 16px;
+		font-size: 10px;
+
+		&::before {
+			display: block;
+			content: '';
+			height: 8px;
+			width: 10px;
+			margin-right: 5px;
+			flex-shrink: 0;
+			background-color: transparent;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+		}
+		
+		&_tel::before {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-phone-view-accent');
+			width: 8px;
+			
+			@include media('<=sm') {
+				height: 13px;
+				width: 13px;
+				margin-right: 10px;
+			}
+		}
+		
+		&_tgm::before {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-tgm-view-accent');
+			
+			@include media('<=sm') {
+				height: 13px;
+				width: 16px;
+				margin-right: 10px;
+			}
+		}
+		
+		@include media('<=md') {
+			margin-left: 8px;
+		}
+		
+		@include media('<=sm') {
+			display: flex;
+			font-size: 13px;
+			color: #fff;
+			justify-content: center;
+			margin: 0 0 30px;
+			padding: 12px 37px;
+			border: 2px solid #fff;
+			border-radius: 50px;
+			transition: border-color 0.3s;
+			
+			&:hover {
+				border-color: $secondary;
+			}
 		}
 	}
 }
