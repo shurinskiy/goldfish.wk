@@ -1,0 +1,18 @@
+<div class="card-b @@if(this.cls){@@cls}">
+	<a class="card-b__image" href="./">
+		<img src="./images/@@image" alt="">
+	</a>
+	<div class="card-b__body">
+		<h4 class="card-b__title">@@title</h4>
+		<div class="card-b__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore euvsd fugiat nulla pariatur. Excepteur sintdsds occaecat cupidatat nonnon proident.</div>
+		<div class="card-b__bottom @@if(this.button){card-b__bottom_buttons}">
+			@@if(!this.button) {
+				<div class="card-b__b-date">от 3 дней</div>
+				<div class="card-b__b-price">от 12000 B</div>
+			}
+			@@if(this.button) {
+				<button class="card-b__button button button_outline-green">Узнать цену</button>
+			}
+		</div>
+	</div>
+</div>

@@ -2,14 +2,19 @@
 	$self: &;
 	background-color: $fade;
 	border-radius: 30px;
+	display: flex;
+	flex-flow: column nowrap;
 
 	&__image {
-
+		display: block;
 	}
 
 	&__body {
 		box-sizing: border-box;
-		padding: 20px;		
+		padding: 20px;
+		flex-grow: 1;
+		display: flex;
+		flex-flow: column nowrap;
 	}
 
 	&__title {
@@ -34,6 +39,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		margin-top: auto;
 
 		&_buttons {
 			padding-top: 18px;

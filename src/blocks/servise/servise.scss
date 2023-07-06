@@ -25,7 +25,10 @@
 	}
 
 	&__accordion {
-
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 26px;
+		margin-bottom: 100px;
 	}
 
 	&__a-card {

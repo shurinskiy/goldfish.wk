@@ -207,7 +207,7 @@ export const slideToggle = (el, duration, cb) => {
 * Плавная прокрутка к заданному элементу 
 * @вызов:
 * 
-import { scrollToId } from "../../js/lib";
+import { scrollToId } from "../../js/libs/helpers.js";
 scrollToId(document.querySelectorAll('a[href^="#"]'));
 * 
 */
