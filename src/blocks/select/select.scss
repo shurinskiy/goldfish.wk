@@ -1,0 +1,103 @@
+.select {
+	$self: &;
+	@keyframes opt_fade { from { opacity: 0; } to { opacity: 1; }}
+	font-family: "PL", sans-serif;
+	line-height: 1.1;
+	font-size: 13px;
+
+	&_opened {
+		
+		#{$self}__list {
+			display: block;
+		}
+		
+		#{$self}__head::before {
+			transform: rotate(180deg);
+		}
+	}
+
+	&__head {
+		box-sizing: border-box;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		padding: 12px 35px;
+		color: #B3B2C5;
+		cursor: default;
+		
+		@include media('<=xxs') {
+
+		}
+	
+		&::before {
+			display: block;
+			content: '';
+			width: 11px;
+			height: 7px;
+			background: url('#{$images-path}icons-sprite.svg#icon-select-down-view-dark') center / contain no-repeat transparent;
+			position: absolute;
+			right: 25px;
+			top: calc(50% - 4px);
+			opacity: 0.2;
+			
+			@include media('<=xxs') {
+				top: calc(50% - 4px);
+				width: 14px;
+				height: 9px;
+				right: 20px;
+			}
+		}
+	}
+
+	&__list {
+		font-family: "PM", sans-serif;
+		box-sizing: border-box;
+		display: none;
+		position: absolute;
+		left: -1px;
+		top: 100%;
+		z-index: 2;
+		top: calc(100% + 12px);
+		width: calc(100% + 2px);
+		padding: 10px;
+		border-radius: 20px;
+		background-color: #fff;
+		border: 1px solid $fade;
+		max-height: 280px;
+		overflow: auto;
+		animation: opt_fade 0.3s;
+		
+		@include media('<=xxxs') {
+			padding: 10px 15px;
+			top: calc(100% + 6px);
+		}
+	
+		&::-webkit-scrollbar {
+			width: 6px;
+			height: 6px;
+		}
+		
+		&::-webkit-scrollbar-track {
+			background-color: $fade;
+		}
+		
+		&::-webkit-scrollbar-thumb {
+			background-color: $primary;
+			border-radius: 10px;
+		}
+		
+		&::-webkit-scrollbar-corner {
+			background-color: transparent;
+		}
+	}
+
+	&__item {
+		cursor: pointer;
+		padding: 7px 14px;
+
+		&:hover {
+			background-color: #f1f1f1;
+		}
+	}
+}

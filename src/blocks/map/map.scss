@@ -1,0 +1,11 @@
+.map {
+	$self: &;
+	margin-bottom: 120px;
+
+	&__inner {
+		height: 400px;
+		overflow: hidden;
+		backface-visibility: hidden;
+		transform: translate3d(0, 0, 0);
+	}
+}

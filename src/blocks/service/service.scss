@@ -1,0 +1,144 @@
+.service {
+	$self: &;
+
+	&__inner {
+
+	}
+
+	&__title {
+		margin-bottom: 40px;
+	}
+	
+	&__subtitle {
+		margin-bottom: 40px;
+	}
+
+	&__cards {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 26px;
+		margin-bottom: 100px;
+	}
+
+	&__card {
+		grid-column: 1 span;
+	}
+
+	&__accordion {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 26px;
+		margin-bottom: 100px;
+	}
+
+	&__a-card {
+
+	}
+
+	&__slider {
+		margin-bottom: 100px;
+		border-radius: 80px;
+	}
+
+	&__slide {
+
+	}
+
+	&__s-navi {
+
+	}
+
+	&__s-prev, &__s-next {
+		@extend %reset-button;
+		position: absolute;
+		height: 47px;		
+		width: 47px;
+		z-index: 1;
+		top: 50%;
+		transform: translateY(-50%);
+		background-color: transparent;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 15px 26px;
+	}
+
+	&__s-prev {
+		left: 15px;
+		background-image: url('#{$images-path}icons-sprite.svg#icon-arr-left-view-white');
+	}
+	
+	&__s-next {
+		right: 15px;
+		background-image: url('#{$images-path}icons-sprite.svg#icon-arr-right-view-white');
+	}
+
+	&__s-pagn {
+		position: absolute;
+		z-index: 2;
+		left: 110px;
+		bottom: 30px;
+		display: flex;
+
+		span {
+			display: block;
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			background-color: rgba(255, 255, 255, 0.3);
+			cursor: pointer;
+
+			&.active {
+				background-color: #fff;
+			}
+
+			&:not(:last-child) {
+				margin-right: 8px;
+			}
+		}
+	}
+
+	&__form {
+		box-sizing: border-box;
+		background-color: $fade;
+		margin-bottom: 100px;
+		border-radius: 80px;
+		padding: 70px 100px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__f-side {
+		box-sizing: border-box;
+		width: 100%;
+		max-width: 500px;
+		padding-right: 20px;
+	}
+
+	&__f-icon {
+		max-width: 110px;
+		margin-bottom: 20px;
+
+		img {
+			display: block;
+		}
+	}
+
+	&__f-title {
+		font-family: "PEB", sans-serif;
+		margin-bottom: 10px;
+		color: $primary;
+		font-size: 28px;
+	}
+	
+	&__f-text {
+		font-family: "PB", sans-serif;
+		color: $primary;
+		font-size: 14px;
+	}
+
+	&__f-form {
+		width: 100%;
+		max-width: 390px;
+	}
+}

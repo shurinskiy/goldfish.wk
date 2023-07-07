@@ -1,0 +1,47 @@
+.work {
+	$self: &;
+	margin-bottom: 100px;
+
+	&__inner {
+
+	}
+
+	&__title {
+		margin-bottom: 60px;
+	}
+	
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 80px 130px;
+	}
+	
+	&__item {
+		color: $primary;
+		max-width: 490px;
+	}
+
+	&__image {
+		background: linear-gradient(180deg, #F5F9FB 0%, #32C3C6 100%);
+		margin-bottom: 20px;
+		border-radius: 50%;
+		height: 100px;
+		width: 100px;
+
+		img {
+			display: block;
+			max-height: 100%;
+			max-width: 100%;
+		}
+	}
+
+	&__i-title {
+		font-family: "PSB", sans-serif;
+		margin-bottom: 20px;
+	}
+	
+	&__text {
+		font-size: 14px;
+		line-height: 1.4;
+	}
+}

@@ -1,0 +1,49 @@
+.form {
+	$self: &;
+
+	&__body {
+
+	}
+
+	&__field {
+		box-sizing: border-box;
+		display: block;
+		border-radius: 100px;
+		background-color: #fff;
+		margin-bottom: 20px;
+		position: relative;
+
+		input, textarea {
+			@extend %reset-input;
+			font-family: "PM", sans-serif;
+			color: $primary;
+			padding: 12px 35px;
+			resize: none;
+			width: 100%;
+			font-size: 13px;
+			
+			&::placeholder {
+				font-family: "PL", sans-serif;
+				color: #B3B2C5;
+			}
+		}
+
+		&_text {
+			
+		}
+
+		&_sect {
+			
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		justify-content: center;
+		padding-top: 10px;
+	}
+
+	&__button {
+
+	}
+}

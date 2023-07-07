@@ -1,0 +1,29 @@
+.rating {
+	$self: &;
+	display: flex;
+
+	&_small {
+		#{$self}__star {
+			width: 13px;
+			height: 12px;
+
+			&:not(:last-child) {
+				margin-right: 4px;
+			}
+		}
+	}
+
+	&__star {
+		width: 19px;
+		height: 18px;
+		background: url('#{$images-path}ic-star-disabled.svg') center / contain no-repeat transparent;
+		
+		&.active {
+			background-image: url('#{$images-path}ic-star.svg');
+		}
+
+		&:not(:last-child) {
+			margin-right: 7px;
+		}
+	}
+}

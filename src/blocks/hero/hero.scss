@@ -27,18 +27,32 @@
 		display: inline-block;
 		padding: 20px 35px 0 100px;
 		margin-bottom: 20px;
+
+		span {
+			position: relative;
+			z-index: 2;
+		}
 		
-		&::before {
-			display: block;
-			content: '#1 best helper in Pattaya';
+		button {
+			@extend %reset-button;
+			position: absolute;
 			font-family: "PL", sans-serif;
 			font-size: 10px;
-			height: 35px;
-			width: 240px;
-			background: url('#{$images-path}hero-title-info-ic.png') right bottom / auto no-repeat transparent;
-			position: absolute;
+			z-index: 1;
 			right: 0;
 			top: 0;
+			width: 240px;
+			display: flex;
+			justify-content: space-between;
+			
+			&::after {
+				display: block;
+				content: '';
+				width: 31px;
+				height: 31px;
+				border-radius: 50%;
+				background: url('#{$images-path}icons-sprite.svg#icon-info-view-dark') center / 8px 16px no-repeat, linear-gradient(180deg, #FFDD82 0%, #FFC109 100%);
+			}
 		}
 	}
 	

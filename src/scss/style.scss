@@ -65,10 +65,11 @@ $secondary: #32BFC6;
 body, html {
 	box-sizing: border-box;
 	font-size: #{$basesize}px;
-	line-height: 1.2;
 	font-family: "MM", sans-serif;
 	background-color: #fff;
 	min-height: 100vh;
+	line-height: 1.2;
+	color: $primary;
 	display: flex;
 	flex-flow: column nowrap;
 }

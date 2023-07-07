@@ -6,7 +6,7 @@ import { slideToggle } from "../../js/libs/helpers.js";
 		
 		card.querySelector('.card-a__head').addEventListener('click', ({target: t}) => {
 			if (! t.closest('.card-a__button'))
-				slideToggle(hidden, 500, () => card.classList.toggle('opened'));
+				slideToggle(hidden, 300, () => card.classList.toggle('opened'));
 		});
 	});
 
