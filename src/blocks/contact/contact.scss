@@ -1,0 +1,82 @@
+.contact {
+	$self: &;
+	margin-bottom: 80px;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__title {
+		margin-bottom: 40px;
+	}
+
+	&__side {
+		box-sizing: border-box;
+		padding-right: 20px;
+		max-width: 480px;
+	}
+
+	&__text {
+		font-size: 14px;
+		margin-bottom: 30px;
+		line-height: 1.4;
+	}
+
+	&__button {
+
+	}
+
+	&__links {
+		display: flex;
+	}
+
+	&__link {
+		text-decoration: none;
+		color: $primary;
+		padding: 0 20px 20px;
+		
+		&::before {
+			display: block;
+			content: '';
+			height: 32px;
+			width: 32px;
+			border-radius: 50%;
+			margin-bottom: 10px;
+			background-color: $accent;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+		}
+
+		span {
+			display: block;
+
+			&:nth-child(1) {
+				font-family: "MM", sans-serif;
+				font-size: 14px;
+				margin-bottom: 10px;
+			}
+			
+			&:nth-child(2) {
+				font-family: "PB", sans-serif;
+				font-size: 13px;
+			}
+		}
+
+		&_tel::before {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-phone-view-dark');
+			background-size: 18px 18px;
+		}
+		
+		&_tgm::before {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-tgm-view-dark');
+			background-size: 20px 18px;
+		}
+		
+		&_mail::before {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-mail-view-dark');
+			background-size: 20px 14px;
+		}
+	}
+}

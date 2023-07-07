@@ -3,9 +3,23 @@
 	margin-bottom: 120px;
 
 	&__inner {
+		box-sizing: border-box;
 		height: 400px;
 		overflow: hidden;
+		border-radius: 80px;
 		backface-visibility: hidden;
 		transform: translate3d(0, 0, 0);
+		max-width: 1200px;
+		width: calc(100% - 40px);
+		margin: 0 auto;
+		background: url('#{$images-path}map-bg.png') center / cover no-repeat transparent;
+		
+		[class*="copyrights-pane"] {
+			display: none;
+		}
+		
+		@include media('<=xs') {
+			width: calc(100% - 30px);
+		}
 	}
 }
