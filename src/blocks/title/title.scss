@@ -4,6 +4,10 @@
 	font-family: "PEB", sans-serif;
 	font-size: 40px;
 	
+	@include media('<=sm') {
+		font-size: 36px;
+	}
+	
 	&_subtitle {
 		color: $primary;
 		font-family: "PSB", sans-serif;

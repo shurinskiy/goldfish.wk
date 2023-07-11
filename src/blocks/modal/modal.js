@@ -16,41 +16,16 @@ import { makeModalFrame } from "../../js/libs/modal";
 
 			if (video && !!video.canPlayType) {
 				const play = document.createElement('button');
-				const full = document.createElement('button');
 
-				video.controls = false;
-				video.muted = false;
-				video.volume = 1;
-				
 				play.className = 'modal__play';
-				full.className = 'modal__full';
-
-				play.addEventListener('click', (e) => {
-					let stopped = (video.paused || video.ended);
-					stopped ? video.play() : video.pause();
-					play.classList.toggle('playing', stopped);
-				});
-
-				full.addEventListener('click', (e) => {
-					let cls = 'modal__content_fullscreen';
-
-					if (document.fullscreenElement) {
-						document.exitFullscreen();
-						this.classList.remove(cls);
-					} else if (document.webkitFullscreenElement) {
-						document.webkitExitFullscreen();
-						this.classList.remove(cls);
-					} else if (this.webkitRequestFullscreen) {
-						this.webkitRequestFullscreen();
-						this.classList.add(cls);
-					} else {
-						this.requestFullscreen();
-						this.classList.add(cls);
-					}					
-				});
-				
+				play.addEventListener('click', (e) => video.play());
 				this.append(play);
-				this.append(full);
+				
+				['pause', 'ended', 'playing'].forEach((event) => {
+					video.addEventListener(event, (e) => {
+						play.classList.toggle('playing', !(video.paused || video.ended));
+					});
+				});
 			}
 
 			selectTweaker(this.querySelectorAll('.form__field_sect'));

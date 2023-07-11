@@ -13,6 +13,14 @@
 		font-size: 16px;
 		padding: 28px 0;
 		text-align: center;
+		
+		@include media('<=sm') {
+			font-size: 15px;
+		}
+		
+		@include media('<=xxs') {
+			font-size: 14px;
+		}
 	}
 
 	&__buttons {
@@ -32,6 +40,26 @@
 		padding: 10px;
 		width: 50%;
 		border-radius: 24px;
+
+		br {
+			display: none;
+
+			@include media('<=xxs') {
+				display: block;
+			}
+		}
+		
+		@include media('<=sm') {
+			font-size: 15px;
+		}
+		
+		@include media('<=xs') {
+			font-size: 14px;
+		}
+		
+		@include media('<=xxxs') {
+			font-size: 12px;
+		}
 		
 		&.active {
 			color: $secondary;

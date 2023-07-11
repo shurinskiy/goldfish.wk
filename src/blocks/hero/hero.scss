@@ -6,7 +6,21 @@
 		padding-bottom: 60px;
 		background: url('#{$images-path}bubble.png') top 60px left 55px / 40px 44px no-repeat, url('#{$images-path}bubble.png') bottom 35% left 145px / 28px 32px no-repeat, url('#{$images-path}bubble.png') top 50px right 120px / 78px 87px no-repeat, url('#{$images-path}bubble.png') bottom 55% right 80px / 40px 45px no-repeat;
 		position: relative;
+
+		@include media('<=sm') {
+			padding-top: 60px;
+		}
+
+		@include media('<=xxs') {
+			padding-top: 50px;
+			padding-bottom: 40px;
+			background: url('#{$images-path}bubble.png') top 10px left 70px / 40px 44px no-repeat, url('#{$images-path}bubble.png') top 110px left 155px / 24px 28px no-repeat, url('#{$images-path}bubble.png') top 65px right -20px / 70px 80px no-repeat, url('#{$images-path}bubble.png') top 130px right 40px / 30px 35px no-repeat;
+		}
 		
+		@include media('<=xxxs') {
+			padding-bottom: 30px;
+		}
+	
 		&::before {
 			display: block;
 			content: '';
@@ -16,6 +30,50 @@
 			position: absolute;
 			top: 45%;
 			left: -70px;
+			
+			@include media('<=sm') {
+				top: 80px;
+			}
+			
+			@include media('<=xs') {
+				left: -30px;
+				width: 200px;
+				height: 170px;
+			}
+			
+			@include media('<=xxs') {
+				top: 60px;
+				width: 185px;
+				height: 160px;
+			}
+		}
+	}
+
+	&__top {
+		box-sizing: border-box;
+		display: none;
+		z-index: 1;
+		width: 100%;
+		max-width: 460px;
+		position: relative;
+		margin-bottom: 60px;
+
+		@include media('<=sm') {
+			display: block;
+		}
+
+		@include media('<=xs') {
+			padding-left: 15px;
+		}
+
+		@include media('<=xxs') {
+			padding: 0;
+			max-width: 380px;
+			margin: 0 auto 65px;
+		}
+		
+		@include media('<=xxxs') {
+			margin: 0 auto 90px;
 		}
 	}
 
@@ -27,6 +85,23 @@
 		display: inline-block;
 		padding: 20px 35px 0 100px;
 		margin-bottom: 20px;
+		
+		@include media('<=sm') {
+			padding: 20px 35px 0 0;
+			margin-bottom: 15px;
+			text-align: right;
+		}
+		
+		@include media('<=xxs') {
+			text-align: left;
+			padding: 20px 0 0 0;
+			margin-bottom: 10px;
+		}
+		
+		@include media('<=xxxs') {
+			margin-bottom: 20px;
+			font-size: 32px;
+		}
 
 		span {
 			position: relative;
@@ -61,5 +136,23 @@
 		color: $primary;
 		font-size: 28px;
 		padding-left: 200px;
+		
+		@include media('<=sm') {
+			padding: 0;
+			
+			br { display: none; }
+		}
+		
+		@include media('<=xs') {
+			font-size: 26px;
+		}
+		
+		@include media('<=xxs') {
+			font-size: 20px;
+		}
+		
+		@include media('<=xxxs') {
+			font-size: 18px;
+		}
 	}
 }

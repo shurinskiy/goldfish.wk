@@ -18,6 +18,14 @@
 		grid-template-columns: repeat(4, 1fr);
 		grid-gap: 26px;
 		margin-bottom: 100px;
+		
+		@include media('<=lg') {
+			grid-template-columns: repeat(3, 1fr);
+		}
+		
+		@include media('<=sm') {
+			grid-template-columns: repeat(2, 1fr);
+		}
 	}
 
 	&__card {
