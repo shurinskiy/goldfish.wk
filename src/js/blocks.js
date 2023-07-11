@@ -1,9 +1,10 @@
 import "../blocks/toggles/toggles.js";
 import "../blocks/service/service.js";
+import "../blocks/reviews/reviews.js";
 import "../blocks/header/header.js";
 import "../blocks/card-a/card-a.js";
 import "../blocks/rating/rating.js";
-import "../blocks/form/form.js";
+import "../blocks/modal/modal.js";
 import "../blocks/faq/faq.js";
-import "../blocks/reviews/reviews.js";
 import "../blocks/map/map.js";
+import "../blocks/video/video.js";

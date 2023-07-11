@@ -41,9 +41,15 @@
 		top: 10px;
 		right: 30px;
 		background: url('#{$images-path}icons-sprite.svg#icon-close-view-white') center / 19px 19px no-repeat rgba(255, 255, 255, 0.1);
+		transition: background-color 0.3s;
 
 		@include media('<=sm') {
 			display: block;
+		}
+		
+		&:hover { 
+			background-color: #fff; 
+			background-image: url('#{$images-path}icons-sprite.svg#icon-close-view-dark');
 		}
 	}
 

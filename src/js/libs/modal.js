@@ -106,7 +106,7 @@ export const makeModalFrame = function(props = {}) {
 				this.scrollLock.disablePageScroll();
 
 			if (typeof this.props.open === 'function') 
-				return this.props.open.call(this.body, this);
+				return this.props.open.call(this.body, this, el);
 		}
 						
 		move(direction = 1) {

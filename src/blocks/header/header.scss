@@ -71,9 +71,15 @@
 		border-radius: 50%;
 		margin-left: auto;
 		flex-shrink: 0;
+		transition: background-color 0.3s;
 
 		@include media('<=sm') {
 			display: block;
+		}
+		
+		&:hover { 
+			background-color: #fff; 
+			background-image: url('#{$images-path}icons-sprite.svg#icon-menu-view-dark');
 		}
 	}
 }

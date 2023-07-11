@@ -1,0 +1,240 @@
+.modal {
+	$self: &;
+	box-sizing: border-box;
+	display: none;
+	position: fixed;
+	z-index: 9999;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	height: calc(var(--vh, 1vh) * 100);
+	background-color: rgba(14, 17, 46, 0.95);
+	backdrop-filter: blur(3px);
+	padding: 30px;
+	overflow-y: auto;
+	@keyframes slideInDown {
+		from { opacity: 0; transform: translateY(-2000px); }
+		to { opacity: 1; transform: translateY(0); }
+	}
+	@keyframes show_fade { from { opacity: 0; } to { opacity: 1; }}
+	
+	@include media('<=xxs') {
+		padding: 15px;
+	}
+
+	&[style*="display: block"] {
+		display: flex !important;
+	}
+
+	&_request {
+		#{$self}__body {
+			max-width: 600px;
+			padding: 55px 40px;
+		}
+
+		#{$self}__content {
+			max-width: 390px;
+			margin: 0 auto;
+		}
+	}
+
+	&_video {
+		#{$self}__body {
+			background: transparent;
+			max-width: 1200px;
+			box-shadow: none;
+			border-radius: 0;
+			padding: 0;
+		}
+		
+		#{$self}__content {
+			border-radius: 80px;
+			overflow: hidden;
+		
+			@include media('<=xxs') {
+				border-radius: 40px;
+			}
+
+			&_fullscreen {
+				border-radius: 0;
+
+				video {
+					object-fit: contain;
+				}
+			}
+		}
+	}
+
+	&_error {
+		#{$self}__content {
+			&::after { content: 'Задайте id целевого блока в атрибуте data-modal'; }
+		}
+	}
+
+	&_self {
+		#{$self}__body {
+			max-width: none;
+			width: auto;
+			padding: 0;
+		}
+	}
+	
+	&__hidden {
+		display: none;
+	}
+	
+	&__close {
+		position: absolute;
+		top: -75px; right: 0px;
+		border-radius: 50%;
+		cursor: pointer;
+		height: 47px;
+		width: 47px;
+		z-index: 2;
+		background: url('#{$images-path}icons-sprite.svg#icon-close-view-white') center / 20px 20px no-repeat rgba(255, 255, 255, 0.15);
+		transition: background-color 0.3s;
+
+		&:hover { 
+			background-color: #fff; 
+			background-image: url('#{$images-path}icons-sprite.svg#icon-close-view-dark');
+		}
+	}
+
+	&__body {
+		animation: slideInDown 0.7s ease both;
+		box-sizing: border-box;
+		position: relative;
+		background-color: $fade;
+		border-radius: 80px;
+		margin: auto;
+		padding: 40px;
+		width: 100%;
+		max-width: 1000px;
+		box-shadow: 0px 1px 10px 4px rgba(0, 0, 0, 0.07);
+		
+		@include media('<=xxs') {
+			border-radius: 40px;
+			padding: 20px;
+		}
+	}
+	
+	&__content {
+		min-height: 200px;
+		
+		@include media('<=xxs') {
+			min-height: 140px;
+		}
+		
+		@include media('<=xxxs') {
+
+		}
+
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+
+		video {
+			display: block;
+			height: 100%;
+			width: 100%;
+			max-width: 100%;
+		}
+
+		&_slideshow {
+
+			img {
+				animation: show_fade 0.3s;
+				width: 100%;
+				object-fit: cover;
+				display: none;
+				min-height: 400px;
+
+				&.active {
+					display: block;
+				}
+			}
+		}
+	}
+
+	&__prev, &__next {
+		@extend %reset-button;
+		width: 36px;
+		height: 36px;
+		border-radius: 50%;
+		box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.4);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 16px 14px;
+		background-color: #fff;
+		border: 1px solid rgba(170, 170, 170, 0);
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 2;
+	}
+	
+	&__prev {
+		left: -18px;
+		background-image: url('#{$images-path}icons-sprite.svg#icon-arr-left-view-white');
+		
+		@include media('<=xxs') {
+			left: -12px;
+		}
+	}
+	
+	&__next {
+		right: -18px;
+		background-image: url('#{$images-path}icons-sprite.svg#icon-arr-right-view-white');
+		
+		@include media('<=xxs') {
+			right: -12px;
+		}
+	}
+
+	&__play {
+		@extend %reset-button;
+		position: absolute;
+		z-index: 2;
+		top: 50%; left: 50%;
+		transform: translate(-50%, -50%);
+		width: 85px;
+		height: 85px;
+		border-radius: 50%;
+		background: url('#{$images-path}icons-sprite.svg#icon-play-view-white') center left 30px / 32px 35px no-repeat rgba(255, 255, 255, 0.15);
+		transition: background-color 0.3s;
+
+		&.playing {
+			background-image: url('#{$images-path}icons-sprite.svg#icon-pause-view-white');
+			background-position: center;
+			background-size: 30px 35px;
+			
+			&:hover {
+				background-image: url('#{$images-path}icons-sprite.svg#icon-pause-view-dark');
+			}
+		}
+		
+		&:hover { 
+			background-color: #fff; 
+			background-image: url('#{$images-path}icons-sprite.svg#icon-play-view-dark');
+		}
+	}
+	
+	&__full {
+		@extend %reset-button;
+		position: absolute;
+		bottom: 7%; left: 50%;
+		transform: translateX(-50%);
+		width: 47px;
+		height: 47px;
+		border-radius: 50%;
+		background: url('#{$images-path}icons-sprite.svg#icon-full-view-white') center / 21px 21px no-repeat rgba(255, 255, 255, 0.15);
+		transition: background-color 0.3s;
+		
+		&:hover { 
+			background-color: #fff; 
+			background-image: url('#{$images-path}icons-sprite.svg#icon-full-view-dark');
+		}
+	}
+}

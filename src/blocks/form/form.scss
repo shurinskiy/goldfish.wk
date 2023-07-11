@@ -1,6 +1,12 @@
 .form {
 	$self: &;
 
+	&__title {
+		font-family: "PB", sans-serif;
+		margin-bottom: 30px;
+		font-size: 12px;
+	}
+
 	&__body {
 
 	}
@@ -26,6 +32,14 @@
 				font-family: "PL", sans-serif;
 				color: #B3B2C5;
 			}
+		}
+
+		&_info {
+			display: none;
+		}
+
+		&_region {
+			@include hide();
 		}
 
 		&_text {
