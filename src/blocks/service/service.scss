@@ -138,10 +138,6 @@
 	}
 
 	&__form {
-		margin-bottom: 100px;
-		
-		@include media('<=xxs') {
-			margin-bottom: 60px;
-		}
+
 	}
 }

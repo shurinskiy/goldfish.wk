@@ -1,9 +1,12 @@
 .header {
 	$self: &;
-	background-color: $fade;
+	// background-color: $fade;
+	background-color: rgba(239, 252, 255, 0.7);
 	border-radius: 0 0 40px 40px;
 	padding-bottom: 11px;
 	padding-top: 11px;
+	position: relative;
+	z-index: 1;
 	
 	@include media('<=sm') {
 		padding-bottom: 8px;

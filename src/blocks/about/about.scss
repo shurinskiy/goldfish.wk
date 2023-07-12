@@ -1,0 +1,101 @@
+.about {
+	$self: &;
+	margin-bottom: 100px;
+	
+	@include media('<=xs') {
+		margin-bottom: 60px;
+	}
+
+	&__inner {
+		padding-top: 100px;
+	}
+
+	&__title {
+		margin-bottom: 40px;
+	}
+
+	&__intro {
+		margin-bottom: 60px;
+		max-width: 990px;
+
+		@include media('<=xs') {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 20px;
+		
+		@include media('<=sm') {
+			grid-template-columns: 1fr;
+			grid-gap: 0;
+		}
+	}
+
+	&__item {
+		grid-column: 1 span;
+		padding: 115px 0 0 140px;
+		font-size: 14px;
+		position: relative;
+		
+		@include media('<=md') {
+			padding: 100px 0 0 120px;
+		}
+		
+		@include media('<=xs') {
+			padding: 80px 0 0 100px;
+		}
+		
+		@include media('<=xxs') {
+			padding: 55px 0 0 80px;
+		}
+		
+		@include media('<=xxxs') {
+			padding: 55px 0 0 60px;
+		}
+
+		&::before {
+			display: block;
+			content: '';
+			width: 140px;
+			height: 140px;
+			background-color: transparent;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			position: absolute;
+			top: 0; left: 0;
+			z-index: 1;
+			
+			@include media('<=md') {
+				width: 120px;
+				height: 120px;
+			}
+			
+			@include media('<=xs') {
+				width: 100px;
+				height: 100px;
+			}
+			
+			@include media('<=xxs') {
+				width: 70px;
+				height: 70px;
+			}
+			
+			@include media('<=xxxs') {
+				width: 60px;
+				height: 60px;
+			}
+		}
+
+		&:nth-child(1)::before {
+			background-image: url('#{$images-path}cap-image-2.png');
+		}
+		
+		&:nth-child(2)::before {
+			background-image: url('#{$images-path}cap-image-3.png');
+		}
+	}
+}

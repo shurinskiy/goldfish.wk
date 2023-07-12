@@ -1,33 +1,42 @@
 .free {
 	$self: &;
-	box-sizing: border-box;
-	background-color: $fade;
-	border-radius: 80px;
-	padding: 70px 100px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	
-	@include media('<=md') {
-		padding: 50px;
-	}
-	
-	@include media('<=sm') {
-		flex-flow: column nowrap;
-	}
-	
-	@include media('<=xs') {
-		border-radius: 50px;
-	}
-	
+	margin-bottom: 100px;
+		
 	@include media('<=xxs') {
-		border-radius: 30px;
-		padding: 30px;
+		margin-bottom: 60px;
 	}
-	
-	@include media('<=xxxs') {
-		padding: 20px;
+
+	&__inner {
+		box-sizing: border-box;
+		background-color: $fade;
+		border-radius: 80px;
+		padding: 70px 100px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		
+		@include media('<=md') {
+			padding: 50px;
+		}
+		
+		@include media('<=sm') {
+			flex-flow: column nowrap;
+		}
+		
+		@include media('<=xs') {
+			border-radius: 50px;
+		}
+		
+		@include media('<=xxs') {
+			border-radius: 30px;
+			padding: 30px;
+		}
+		
+		@include media('<=xxxs') {
+			padding: 20px;
+		}
 	}
+
 
 	&__side {
 		box-sizing: border-box;
