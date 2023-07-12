@@ -20,10 +20,19 @@
 		align-items: center;
 		min-height: 80px;
 		padding: 18px 90px 18px 30px;
-		background: url('#{$images-path}icons-sprite.svg#icon-arr-down-view-dark') center right 32px / 14px 8px no-repeat $fade;
+		background: url('#{$images-path}icons-sprite.svg#icon-arr-down-view-dark') top 42px right 32px / 14px 8px no-repeat $fade;
 		
 		@include media('<=md') {
 			padding: 18px 70px 18px 30px;
+		}
+		
+		@include media('<=xs') {
+			display: block;
+		}
+		
+		@include media('<=xxxs') {
+			padding: 18px 50px 18px 20px;
+			background-position: top 30px right 25px;
 		}
 	}
 	
@@ -33,6 +42,19 @@
 		cursor: pointer;
 		flex-grow: 1;
 		padding-right: 20px;
+
+		@include media('<=xs') {
+			padding: 0;
+			margin-bottom: 20px;
+		}
+		
+		@include media('<=xxs') {
+			font-size: 15px;
+		}
+		
+		@include media('<=xxxs') {
+			font-size: 14px;
+		}
 	}
 	
 	&__h-side {
@@ -48,6 +70,15 @@
 		font-size: 12px;
 		
 		@include media('<=md') {
+			font-size: 11px;
+		}
+		
+		@include media('<=xs') {
+			text-align: center;
+			font-size: 12px;
+		}
+		
+		@include media('<=xxxs') {
 			font-size: 11px;
 		}
 	}
@@ -66,13 +97,30 @@
 		@include media('<=sm') {
 			font-size: 17px;
 		}
+		
+		@include media('<=xs') {
+			text-align: center;
+			font-size: 20px;
+		}
+		
+		@include media('<=xxxs') {
+			font-size: 17px;
+		}
 	}
 	
 	&__content {
 		box-sizing: border-box;
 		transition-timing-function: 'linear';
-		padding: 30px 40px;
+		padding: 30px 40px 15px;
 		display: none;
+		
+		@include media('<=xs') {
+			padding: 30px 30px 15px;
+		}
+		
+		@include media('<=xxxs') {
+			padding: 30px 20px 15px;
+		}
 	}
 	
 	&__text {
@@ -82,17 +130,33 @@
 		line-height: 1.4;
 		font-size: 14px;
 		color: $primary;
+		
+		@include media('<=xs') {
+			margin-bottom: 25px;
+		}
 	}
 
 	&__buttons {
-
+		display: flex;
+		flex-wrap: wrap;
 	}
 
 	&__button {
 		white-space: nowrap;
+		margin-bottom: 15px;
 		
 		&:not(:last-child) {
-			margin-right: 30px;
+			@include media('>xs') {
+				margin-right: 30px;
+			}
+		}
+			
+		@include media('<=xs') {
+			margin: 0 auto 15px;
+		}
+			
+		@include media('<=xxxs') {
+			padding: 12px 25px 11px;
 		}
 	}
 }

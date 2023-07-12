@@ -1,6 +1,10 @@
 .reviews {
 	$self: &;
 	margin-bottom: 100px;
+	
+	@include media('<=xs') {
+		margin-bottom: 60px;
+	}
 
 	&__inner {
 
@@ -8,6 +12,10 @@
 
 	&__title {
 		margin-bottom: 60px;
+		
+		@include media('<=xs') {
+			margin-bottom: 40px;
+		}
 	}
 
 	&__slider {
@@ -33,6 +41,10 @@
 		display: flex;
 		flex-flow: column nowrap;
 		height: auto;
+		
+		@include media('<=xxxs') {
+			padding: 20px 10px;
+		}
 	}
 
 	&__image {
@@ -102,6 +114,9 @@
 
 	&__navigation {
 
+		@include media('<=xs') {
+			display: none;
+		}
 	}
 	
 	&__prev, &__next {

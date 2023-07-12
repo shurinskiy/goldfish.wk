@@ -1,6 +1,10 @@
 .faq {
 	$self: &;
 	margin-bottom: 80px;
+	
+	@include media('<=xs') {
+		margin-bottom: 60px;
+	}
 
 	&__inner {
 
@@ -8,6 +12,10 @@
 
 	&__title {
 		margin-bottom: 80px;
+		
+		@include media('<=xs') {
+			margin-bottom: 40px;
+		}
 	}
 
 	&__items {
@@ -15,11 +23,27 @@
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-gap: 40px 25px;
+		
+		@include media('<=xs') {
+			grid-template-columns: 1fr;
+		}
 	}
 
 	&__item {
 		padding-left: 100px;
 		position: relative;
+		
+		@include media('<=md') {
+			padding-left: 80px;
+		}
+		
+		@include media('<=sm') {
+			padding-left: 60px;
+		}
+		
+		@include media('<=xxxs') {
+			padding-left: 45px;
+		}
 
 		&::before {
 			display: block;
@@ -31,6 +55,18 @@
 			position: absolute;
 			left: 0;
 			top: 0;
+			
+			@include media('<=md') {
+				font-size: 55px;
+			}
+			
+			@include media('<=sm') {
+				font-size: 40px;
+			}
+			
+			@include media('<=xxxs') {
+				font-size: 28px;
+			}
 		}
 	}
 
@@ -40,6 +76,11 @@
 		margin-bottom: 6px;
 		font-size: 18px;
 		color: $primary;
+		
+		@include media('<=xxxs') {
+			margin-bottom: 10px;
+			font-size: 16px;
+		}
 	}
 	
 	&__i-text {

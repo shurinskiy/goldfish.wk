@@ -1,6 +1,10 @@
 .work {
 	$self: &;
 	margin-bottom: 100px;
+	
+	@include media('<=xs') {
+		margin-bottom: 60px;
+	}
 
 	&__inner {
 
@@ -8,12 +12,33 @@
 
 	&__title {
 		margin-bottom: 60px;
+		
+		@include media('<=xs') {
+			margin-bottom: 40px;
+		}
 	}
 	
 	&__items {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-gap: 80px 130px;
+		
+		@include media('<=lg') {
+			grid-gap: 80px 60px;
+		}
+		
+		@include media('<=sm') {
+			grid-gap: 80px 40px;
+		}
+		
+		@include media('<=xs') {
+			grid-gap: 80px 30px;
+		}
+		
+		@include media('<=xxs') {
+			grid-template-columns: 1fr;
+			grid-gap: 40px 30px;
+		}
 	}
 	
 	&__item {
@@ -38,6 +63,18 @@
 	&__i-title {
 		font-family: "PSB", sans-serif;
 		margin-bottom: 20px;
+		
+		@include media('<=xs') {
+			font-size: 14px;
+		}
+		
+		@include media('<=xxs') {
+			font-size: 16px;
+		}
+		
+		@include media('<=xxxs') {
+			font-size: 15px;
+		}
 	}
 	
 	&__text {

@@ -26,8 +26,8 @@
 		color: #B3B2C5;
 		cursor: default;
 		
-		@include media('<=xxs') {
-
+		@include media('<=xxxs') {
+			padding: 12px 35px 12px 20px;
 		}
 	
 		&::before {

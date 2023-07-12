@@ -1,6 +1,10 @@
 .map {
 	$self: &;
 	margin-bottom: 120px;
+	
+	@include media('<=xs') {
+		margin-bottom: 60px;
+	}
 
 	&__inner {
 		box-sizing: border-box;
@@ -13,6 +17,10 @@
 		width: calc(100% - 40px);
 		margin: 0 auto;
 		background: url('#{$images-path}map-bg.png') center / cover no-repeat transparent;
+		
+		@include media('<=xs') {
+			border-radius: 50px;
+		}
 		
 		[class*="copyrights-pane"] {
 			display: none;

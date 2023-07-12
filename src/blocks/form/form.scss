@@ -27,7 +27,11 @@
 			resize: none;
 			width: 100%;
 			font-size: 13px;
-			
+		
+			@include media('<=xxxs') {
+				padding: 12px 35px 12px 20px;
+			}
+				
 			&::placeholder {
 				font-family: "PL", sans-serif;
 				color: #B3B2C5;

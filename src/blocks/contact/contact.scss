@@ -1,20 +1,35 @@
 .contact {
 	$self: &;
 	margin-bottom: 80px;
-
-	&__inner {
-		display: flex;
-		justify-content: space-between;
+	
+	@include media('<=xs') {
+		margin-bottom: 40px;
 	}
 
 	&__title {
 		margin-bottom: 40px;
 	}
 
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+
+		@include media('<=md') {
+			flex-flow: column nowrap;
+		}
+	}
+
 	&__side {
 		box-sizing: border-box;
 		padding-right: 20px;
 		max-width: 480px;
+
+		@include media('<=md') {
+			margin-bottom: 30px;
+			max-width: none;
+			padding: 0;
+			order: 1;
+		}
 	}
 
 	&__text {
@@ -24,17 +39,26 @@
 	}
 
 	&__button {
-
+		align-items: flex-start;
+		line-height: 1.3;
 	}
 
 	&__links {
 		display: flex;
+
+		@include media('<=xs') {
+			flex-wrap: wrap;
+		}
 	}
 
 	&__link {
 		text-decoration: none;
 		color: $primary;
 		padding: 0 20px 20px;
+		
+		@include media('<=md') {
+			padding: 0 40px 20px 0;
+		}
 		
 		&::before {
 			display: block;
@@ -59,6 +83,7 @@
 			}
 			
 			&:nth-child(2) {
+				white-space: nowrap;
 				font-family: "PB", sans-serif;
 				font-size: 13px;
 			}
