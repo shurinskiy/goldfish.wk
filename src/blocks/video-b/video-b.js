@@ -1,6 +1,6 @@
 (() => {
 
-	document.querySelectorAll('.video').forEach(block => {
+	document.querySelectorAll('.video-b').forEach(block => {
 		const video = block.querySelector('video');
 		const play = document.createElement('button');
 		const full = document.createElement('button');
@@ -9,8 +9,8 @@
 		video.muted = false;
 		video.volume = 1;
 		
-		play.className = 'video__play';
-		full.className = 'video__full';
+		play.className = 'video-b__play';
+		full.className = 'video-b__full';
 
 		play.addEventListener('click', (e) => {
 			let stopped = (video.paused || video.ended);
@@ -19,7 +19,7 @@
 		});
 
 		full.addEventListener('click', (e) => {
-			let cls = 'video_fullscreen';
+			let cls = 'video-b_fullscreen';
 
 			if (document.fullscreenElement) {
 				document.exitFullscreen();
