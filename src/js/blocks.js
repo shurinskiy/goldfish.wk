@@ -9,3 +9,4 @@ import "../blocks/modal/modal.js";
 import "../blocks/video/video.js";
 import "../blocks/faq/faq.js";
 import "../blocks/map/map.js";
+import "../blocks/gallery/gallery.js";

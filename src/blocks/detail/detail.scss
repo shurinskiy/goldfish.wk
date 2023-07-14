@@ -1,0 +1,113 @@
+.detail {
+	$self: &;
+	margin-bottom: 100px;
+	
+	@include media('<=xs') {
+		margin-bottom: 60px;
+	}
+
+	&_top {
+		#{$self}__inner {
+			padding-top: 100px;
+			
+			@include media('<=xs') {
+				padding-top: 60px;
+			}
+		}		
+	}
+
+	&__inner {
+
+	}
+
+	&__title {
+		max-width: 590px;
+		margin-bottom: 40px;
+	}
+	
+	&__intro {
+		max-width: 780px;
+		margin-bottom: 40px;
+	}
+
+	&__content {
+		display: flex;
+	}
+
+	&__gallery {
+		width: 100%;
+		max-width: 390px;
+		min-width: 350px;
+		order: -1;
+	}
+
+	&__side {
+		padding-left: 26px;
+	}
+
+	&__text {
+		margin-bottom: 40px;
+		font-size: 14px;
+
+		p {
+			margin-bottom: 16px;
+		}
+		
+		ul li {
+			padding-left: 15px;
+			position: relative;
+			margin-bottom: 8px;
+
+			&::before {
+				display: block;
+				content: '\02022';
+				color: $secondary;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+		}
+	}
+
+	&__price {
+		font-family: "PSB", sans-serif;
+		display: flex;
+		align-items: center;
+		margin-bottom: 40px;
+		
+		span {
+			&:nth-child(1) {
+				font-size: 24px;
+				margin-right: 40px;
+			}
+			
+			&:nth-child(2) {
+				font-family: "PM", sans-serif;
+				font-size: 16px;				
+			}
+		}
+	}
+
+	&__buttons {
+
+	}
+
+	&__button {
+		white-space: nowrap;
+		margin-bottom: 15px;
+		
+		&:not(:last-child) {
+			@include media('>xs') {
+				margin-right: 30px;
+			}
+		}
+			
+		@include media('<=xs') {
+			margin: 0 auto 15px;
+		}
+			
+		@include media('<=xxxs') {
+			padding: 12px 25px 11px;
+		}
+	}
+}

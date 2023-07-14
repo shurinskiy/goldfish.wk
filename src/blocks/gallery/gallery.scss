@@ -1,0 +1,78 @@
+.gallery {
+	$self: &;
+	&__frame {
+		@include aspect-ratio(8, 5);
+		border-radius: 60px;
+		margin-bottom: 16px;
+		overflow: hidden;
+	}
+
+	&__image {
+		position: absolute;
+		top: 0; left: 0;
+		height: 100%;
+		opacity: 0;
+		transition: opacity 0.3s;
+		
+		&.active {
+			opacity: 1;
+		}
+
+		img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__thumbs {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 16px;
+	}
+
+	&__thumb {
+		@include aspect-ratio(8, 5);
+		position: relative;
+		flex-grow: 1;
+		outline: 2px solid transparent;
+		transition: outline-color 0.3s;
+		background-size: cover;
+		border-radius: 20px;
+		
+		&.active {
+			z-index: 1;
+			outline-color: $secondary;
+		}
+	}
+
+	&__prev, &__next {
+		@extend %reset-button;
+		display: block;
+		width: 55px;
+		height: 55px;
+		background-position: center;
+		background-size: 12px 21px;
+		background-repeat: no-repeat;
+		background-color: rgba(0, 0, 0, 0.3);
+		border-radius: 50%;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	&__prev {
+		right: auto;
+		left: -27px;
+		background-image: url('#{$images-path}icons-sprite.svg#icon-arr-left-view-white');
+		background-position: center left 19px;
+	}
+	
+	&__next {
+		left: auto;
+		right: -27px;
+		background-image: url('#{$images-path}icons-sprite.svg#icon-arr-right-view-white');
+		background-position: center right 19px;
+	}
+}

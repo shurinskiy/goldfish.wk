@@ -1,9 +1,13 @@
 import ymaps from 'ymaps';
 
 (() => {
+	const area = document.getElementById('map');
+
+	if (! area) return;
+
 	ymaps.load('https://api-maps.yandex.ru/2.1/?lang=ru_RU').then(maps => {
 
-		const map = new maps.Map('map', {
+		const map = new maps.Map(area, {
 			center: [12.9165, 100.8667],
 			zoom: 16,
 			controls: ['zoomControl'],
@@ -29,7 +33,6 @@ import ymaps from 'ymaps';
 		map.behaviors.disable('scrollZoom');
 		map.geoObjects.add(goldfish);
 
-	})
-	.catch(error => console.log('Failed to load Yandex Maps', error));
+	}).catch(error => console.log('Failed to load Yandex Maps', error));
 
 })();

@@ -3,9 +3,13 @@
 	position: relative;
 	height: 660px;
 	margin-top: -90px;
-
+	
 	@include media('<=xlg') {
 		height: auto;
+	}
+	
+	@include media('<=sm') {
+		margin-top: -60px;
 	}
 
 	video {

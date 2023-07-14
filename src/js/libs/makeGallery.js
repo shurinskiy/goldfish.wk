@@ -44,7 +44,7 @@
 * 
 import { makeGallery } from "../../js/lib";
 makeGallery(document.querySelectorAll('.someblock'), { 
-	class: gallery,
+	class: 'gallery',
 	navigation: true 
 });
 * 
