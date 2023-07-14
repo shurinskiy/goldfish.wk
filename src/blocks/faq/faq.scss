@@ -1,21 +1,12 @@
 .faq {
 	$self: &;
-	margin-bottom: 80px;
-	
-	@include media('<=xs') {
-		margin-bottom: 60px;
-	}
 
 	&__inner {
 
 	}
 
 	&__title {
-		margin-bottom: 80px;
-		
-		@include media('<=xs') {
-			margin-bottom: 40px;
-		}
+
 	}
 
 	&__items {
@@ -41,8 +32,12 @@
 			padding-left: 60px;
 		}
 		
+		@include media('<=xs') {
+			padding-left: 75px;
+		}
+		
 		@include media('<=xxxs') {
-			padding-left: 45px;
+			padding-left: 52px;
 		}
 
 		&::before {
@@ -64,8 +59,12 @@
 				font-size: 40px;
 			}
 			
+			@include media('<=xs') {
+				font-size: 50px;
+			}
+			
 			@include media('<=xxxs') {
-				font-size: 28px;
+				font-size: 34px;
 			}
 		}
 	}

@@ -1,21 +1,15 @@
 .team {
 	$self: &;
-	margin-bottom: 100px;
-	
-	@include media('<=xs') {
-		margin-bottom: 60px;
-	}
 
 	&__inner {
 
 	}
 
 	&__title {
-		margin-bottom: 40px;
+
 	}
 	
 	&__intro {
-		margin-bottom: 60px;
 		max-width: 1030px;
 	}
 

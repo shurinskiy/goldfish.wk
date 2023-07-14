@@ -20,7 +20,7 @@
 		align-items: center;
 		min-height: 80px;
 		padding: 18px 90px 18px 30px;
-		background: url('#{$images-path}icons-sprite.svg#icon-arr-down-view-dark') top 42px right 32px / 14px 8px no-repeat $fade;
+		background: url('#{$images-path}icons-sprite.svg#icon-arr-down-view-dark') top 38px right 32px / 14px 8px no-repeat $fade;
 		
 		@include media('<=md') {
 			padding: 18px 70px 18px 30px;

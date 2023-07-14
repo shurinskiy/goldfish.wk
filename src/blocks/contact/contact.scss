@@ -1,13 +1,8 @@
 .contact {
 	$self: &;
-	margin-bottom: 80px;
-	
-	@include media('<=xs') {
-		margin-bottom: 40px;
-	}
 
 	&__title {
-		margin-bottom: 40px;
+
 	}
 
 	&__inner {

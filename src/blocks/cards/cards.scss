@@ -1,24 +1,18 @@
 .cards {
 	$self: &;
-	margin-bottom: 100px;
-	
-	@include media('<=xs') {
-		margin-bottom: 60px;
+
+	&__title {
+
+	}
+
+	&__intro {
+
 	}
 
 	&__inner {
-
-	}
-
-	&__title {
-		margin-bottom: 60px;
-	}
-
-	&__items {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		grid-gap: 24px;
-		margin-bottom: 60px;
 		
 		@include media('<=lg') {
 			grid-template-columns: repeat(3, 1fr);
@@ -34,7 +28,6 @@
 		
 		@include media('<=xxs') {
 			grid-template-columns: 1fr;
-			margin-bottom: 40px;
 		}
 	}
 

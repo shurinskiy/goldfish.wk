@@ -1,10 +1,5 @@
 .detail {
 	$self: &;
-	margin-bottom: 100px;
-	
-	@include media('<=xs') {
-		margin-bottom: 60px;
-	}
 
 	&_top {
 		#{$self}__inner {
@@ -22,16 +17,18 @@
 
 	&__title {
 		max-width: 590px;
-		margin-bottom: 40px;
 	}
 	
 	&__intro {
 		max-width: 780px;
-		margin-bottom: 40px;
 	}
 
 	&__content {
 		display: flex;
+
+		@include media('<=sm') {
+			flex-flow: column nowrap;
+		}
 	}
 
 	&__gallery {
@@ -39,10 +36,20 @@
 		max-width: 390px;
 		min-width: 350px;
 		order: -1;
+		
+		@include media('<=sm') {
+			min-width: auto;
+			max-width: 550px;
+			margin: 0 auto 40px;
+		}
 	}
 
 	&__side {
 		padding-left: 26px;
+		
+		@include media('<=sm') {
+			padding: 0;
+		}
 	}
 
 	&__text {
@@ -73,9 +80,13 @@
 		font-family: "PSB", sans-serif;
 		display: flex;
 		align-items: center;
-		margin-bottom: 40px;
+		margin-bottom: 25px;
+		flex-wrap: wrap;
 		
 		span {
+			display: block;
+			margin-bottom: 15px;
+
 			&:nth-child(1) {
 				font-size: 24px;
 				margin-right: 40px;

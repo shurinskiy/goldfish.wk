@@ -1,10 +1,5 @@
 .free {
 	$self: &;
-	margin-bottom: 100px;
-		
-	@include media('<=xxs') {
-		margin-bottom: 60px;
-	}
 
 	&__inner {
 		box-sizing: border-box;

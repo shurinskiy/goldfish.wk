@@ -1,10 +1,5 @@
 .about {
 	$self: &;
-	margin-bottom: 100px;
-	
-	@include media('<=xs') {
-		margin-bottom: 60px;
-	}
 
 	&_top {
 		#{$self}__inner {
@@ -25,12 +20,7 @@
 	}
 
 	&__intro {
-		margin-bottom: 60px;
 		max-width: 990px;
-
-		@include media('<=xs') {
-			margin-bottom: 40px;
-		}
 	}
 
 	&__items {
