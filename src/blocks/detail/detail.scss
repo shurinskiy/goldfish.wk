@@ -1,20 +1,6 @@
 .detail {
 	$self: &;
 
-	&_top {
-		#{$self}__inner {
-			padding-top: 100px;
-			
-			@include media('<=xs') {
-				padding-top: 60px;
-			}
-		}		
-	}
-
-	&__inner {
-
-	}
-
 	&__title {
 		max-width: 590px;
 	}

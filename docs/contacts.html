@@ -1,0 +1,132 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+	<link rel="shortcut icon" href="images/favicon.ico"> 
+	<link rel="stylesheet" href="style.css"> 
+	<title></title> 
+</head> 
+<body class=""> 
+ 
+<header class="header"> 
+	<div class="header__inner container">
+		<a class="header__logo" href="./">
+			<img src="./images/logo.svg" alt="">
+			<img src="./images/logo-mobile.svg" alt="">
+		</a>
+		<div class="header__navi h-navi">
+			<button class="h-navi__close"></button>
+			<div class="h-navi__inner">
+				<nav class="h-navi__menu" data-scroll-lock-scrollable>
+					<a class="h-navi__link" href="./about.html">О нас</a>
+					<a class="h-navi__link" href="./">Для гостей Тайланда</a>
+					<a class="h-navi__link" href="./">Для бизнеса</a>
+				</nav>
+				<div class="h-navi__lang">
+					<a class="active" href="./">RU</a>/<a href="./">EN</a>
+				</div>
+				<div class="h-navi__contacts">
+					<a class="h-navi__button h-navi__button_tel" href="./contacts.html"><span>Контакты</span></a>
+					<a class="h-navi__button h-navi__button_tgm" href="./"><span>Задать Вопрос</span></a>
+				</div>
+			</div>
+		</div>
+		<button class="header__navi-toggle"></button>
+	</div>
+</header>
+
+<section class="contact top mb1">
+	<h2 class="contact__title title mb2 container">Контакты</h2>
+	<div class="contact__inner container">
+		<div class="contact__side">
+			<div class="contact__text">
+				<p>Мы находимся в центре Паттайи, но работаем по всей территории Королевства Таиланд.</p>
+				<p>Вы можете обратиться к нам он-лайн или приехать в наш офис в Паттайе по адресу:</p>
+			</div>
+			<a class="contact__button button button_outline-green button_icon-geo" href="https://maps.app.goo.gl/zBVPZJ49hVPE3U6P6?g_st=ic">352, Phratamnak 3, Pattaya City</a>
+		</div>
+		<div class="contact__links">
+			<a class="contact__link contact__link_tel" href="tel:+66902730920">
+				<span>Звоните нам</span>
+				<span>+66 90 27 30 920</span>
+			</a>
+			<a class="contact__link contact__link_tgm" href="https://t.me/GoldFish_consulting_chat">
+				<span>Пишите в телеграм</span>
+				<span>@theGoldFish</span>
+			</a>
+			<a class="contact__link contact__link_mail" href="mailto:test@gmail.com">
+				<span>Или на почту</span>
+				<span>test@gmail.com</span>
+			</a>
+		</div>
+	</div>
+</section>
+
+<section class="map">
+	<div class="map__inner" id="map"></div>
+</section>
+
+<footer class="footer">
+	<div class="footer__top container">
+		<div class="footer__side">
+			<nav class="footer__navi">
+				<a href="./">О нас</a>
+				<a href="./">Для Гостей Тайланда</a>
+				<a href="./">Для Бизнеса</a>
+			</nav>
+			<a class="footer__logo" href="./">
+				<img src="./images/logo-bottom.svg" alt="">
+			</a>
+		</div>
+		<div class="footer__contacts">
+			<a class="footer__tel" href="tel:+66902730920">+66 90 27 30 920</a>
+			<a class="footer__map" href="https://maps.app.goo.gl/zBVPZJ49hVPE3U6P6?g_st=ic">Мы на карте</a>
+		</div>
+	</div>
+	<div class="footer__bottom">
+		<div class="footer__b-inner container">
+			<span>Copyright &copy;</span>
+		</div>
+	</div>
+</footer>
+
+<div class="modal__hidden">
+	<div id="request">
+		<div class="form">
+			<h2 class="form__title">Оставьте свои контакты<br> и наши менеджеры отправят вам информацию в ближайшее время</h2>
+			<div class="form__body">
+				<label class="form__field form__field_info">
+					<input type="text" placeholder="Информация">
+				</label>
+				<label class="form__field form__field_text">
+					<input type="text" placeholder="Имя">
+				</label>
+				<label class="form__field form__field_region">
+					<input type="text" placeholder="Регион">
+				</label>
+				<label class="form__field form__field_text">
+					<input type="text" placeholder="Mob/Tlg/Whts">
+				</label>
+				<select class="form__field form__field_sect">
+					<option value="Водительские права">Водительские права</option>
+					<option value="Регистрация компании">Регистрация компании</option>
+				</select>
+			</div>
+			<div class="form__buttons">
+				<button class="form__button button button_fill-yellow">Отправить</button>
+			</div>
+		</div>
+	</div>
+	<div id="video">
+		<video controls preload="metadata" poster="./images/video-preview.jpg">
+			<source src="./images/video-small.mp4" type="video/mp4" media="all and (max-width: 480px)">
+			<source src="./images/video.mp4" type="video/mp4">
+		</video>
+	</div>
+</div> 
+
+<script type="text/javascript" charset="utf-8" src="jquery.min.js"></script>
+<script src="common.js"></script> 
+</body> 
+</html>

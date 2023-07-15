@@ -58,7 +58,12 @@
 	}
 	
 	&__h-side {
+		display: flex;
+		flex-flow: column nowrap;
 
+		#{$self}__button {
+			margin: 0 auto;
+		}
 	}
 	
 	&__time {

@@ -1,21 +1,27 @@
 .accordion {
 	$self: &;
 
-	&__inner {
-
-	}
-
 	&__title {
 
 	}
 
-	&__cards {
+	&__inner {
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-gap: 26px;
 	}
 
 	&__card {
+
+	}
+
+	&__buttons {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__button {
 
 	}
 }

@@ -1,6 +1,14 @@
 .find {
 	$self: &;
 
+	&__title {
+		max-width: 620px;
+	}
+
+	&__intro {
+		max-width: 820px;
+	}
+
 	&__inner {
 		margin-bottom: 10px;
 	}
