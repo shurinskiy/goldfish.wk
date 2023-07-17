@@ -7,6 +7,7 @@ import { makeModalFrame } from "../../js/libs/modal";
 		let play = content.querySelector('.modal__play');
 
 		if (!! video?.canPlayType) {
+			video.controls = true;
 			play ||= document.createElement('button');
 			play.className = 'modal__play';
 			play.addEventListener('click', (e) => video.play());
@@ -14,10 +15,7 @@ import { makeModalFrame } from "../../js/libs/modal";
 
 			['pause', 'ended', 'playing'].forEach((event) => {
 				video.addEventListener(event, (e) => {
-					let stopped = video.paused || video.ended;
-
-					play.classList.toggle('playing', !stopped);
-					video.controls = !stopped;
+					play.classList.toggle('playing', !(video.paused || video.ended));
 				});
 			});
 		} else {
