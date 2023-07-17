@@ -85,9 +85,22 @@
 
 	&_self {
 		#{$self}__body {
+			background-color: transparent;
+			box-shadow: none;
+			border-radius: 0;
 			max-width: none;
 			width: auto;
 			padding: 0;
+		}
+
+		#{$self}__content {
+			background-color: #fff; 
+			border-radius: 80px;
+			overflow: hidden;
+		
+			@include media('<=xxs') {
+				border-radius: 40px;
+			}
 		}
 	}
 	
@@ -155,7 +168,7 @@
 
 		&_slideshow {
 
-			img {
+			img, video {
 				animation: show_fade 0.3s;
 				width: 100%;
 				object-fit: cover;
@@ -171,15 +184,14 @@
 
 	&__prev, &__next {
 		@extend %reset-button;
-		width: 36px;
-		height: 36px;
+		height: 47px;
+		width: 47px;
 		border-radius: 50%;
-		box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.4);
 		background-repeat: no-repeat;
 		background-position: center;
-		background-size: 16px 14px;
-		background-color: #fff;
-		border: 1px solid rgba(170, 170, 170, 0);
+		background-size: 14px 21px;
+		background-color: rgba(255, 255, 255, 0.15);
+		transition: background-color 0.3s;
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
@@ -187,20 +199,32 @@
 	}
 	
 	&__prev {
-		left: -18px;
+		left: -23px;
 		background-image: url('#{$images-path}icons-sprite.svg#icon-arr-left-view-white');
+		background-position: center left 14px;
 		
 		@include media('<=xxs') {
 			left: -12px;
 		}
+
+		&:hover { 
+			background-color: #fff; 
+			background-image: url('#{$images-path}icons-sprite.svg#icon-arr-left-view-dark');
+		}
 	}
 	
 	&__next {
-		right: -18px;
+		right: -23px;
 		background-image: url('#{$images-path}icons-sprite.svg#icon-arr-right-view-white');
+		background-position: center right 14px;
 		
 		@include media('<=xxs') {
 			right: -12px;
+		}
+
+		&:hover { 
+			background-color: #fff; 
+			background-image: url('#{$images-path}icons-sprite.svg#icon-arr-right-view-dark');
 		}
 	}
 

@@ -4,7 +4,7 @@ import { makeModalFrame } from "../../js/libs/modal";
 
 (() => {
 	const modal = makeModalFrame({ 
-		select: '.hero__title button, .card-b__button, .card-s__button, .card-a__button', 
+		select: '.hero__title button, .card-b__button, .card-s__button, .card-a__button, .gallery__item', 
 		scrollLock,
 		open: function({ modal }, button) {
 			const info = this.querySelector('.form__field_info');
@@ -23,7 +23,10 @@ import { makeModalFrame } from "../../js/libs/modal";
 				
 				['pause', 'ended', 'playing'].forEach((event) => {
 					video.addEventListener(event, (e) => {
-						play.classList.toggle('playing', !(video.paused || video.ended));
+						let stopped = video.paused || video.ended;
+
+						play.classList.toggle('playing', !stopped);
+						video.controls = !stopped;
 					});
 				});
 			}
