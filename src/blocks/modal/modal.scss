@@ -237,7 +237,7 @@
 		width: 85px;
 		height: 85px;
 		border-radius: 50%;
-		background: url('#{$images-path}icons-sprite.svg#icon-play-view-white') center left 30px / 32px 35px no-repeat rgba(255, 255, 255, 0.15);
+		background: url('#{$images-path}icons-sprite.svg#icon-play-view-white') center left 30px / 32px 35px no-repeat rgba(125, 125, 125, 0.25);
 		transition: background-color 0.3s;
 
 		&.playing {

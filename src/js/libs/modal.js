@@ -69,6 +69,7 @@ export const makeModalFrame = function(props = {}) {
 			this.content = document.querySelector(`.${this.props.class}__content`);
 			this.navi = document.querySelector(`.${this.props.class}__navi`);
 			this.scrollLock = (typeof this.props.scrollLock !== 'undefined') && this.props.scrollLock;
+			this.slideshow = false;
 		
 			this._init();
 		}
@@ -84,7 +85,7 @@ export const makeModalFrame = function(props = {}) {
 			
 			this.content.className = `${this.props.class}__content`;
 			this.content.innerHTML = '';
-			this.navi.remove();
+			this.navi?.remove();
 			delete this.cnt, this.items;
 
 			if (typeof this.props.close === 'function') 
@@ -155,8 +156,13 @@ export const makeModalFrame = function(props = {}) {
 				next.addEventListener('click', () => this.move());
 	
 				this.items.forEach(item => {
-					item.addEventListener('click', () => { this.move() });
+					item.addEventListener('click', () => { 
+						if (item.tagName.toUpperCase() !== 'VIDEO')
+							this.move(); 
+					});
 				});
+
+				this.slideshow = true;
 			}
 		}
 
