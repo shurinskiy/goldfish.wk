@@ -50,6 +50,7 @@
 		"webpack-stream": "^7.0.0"
 	},
 	"dependencies": {
+		"gsap": "^3.12.2",
 		"jquery": "^3.6.0",
 		"scroll-lock": "^2.1.5",
 		"swiped-events": "^1.1.7",

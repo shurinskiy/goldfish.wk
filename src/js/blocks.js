@@ -11,3 +11,4 @@ import "../blocks/faq/faq.js";
 import "../blocks/map/map.js";
 import "../blocks/gallery/gallery.js";
 import "../blocks/banner/banner.js";
+import "../blocks/hero/hero.js";

@@ -1,6 +1,6 @@
 import scrollLock from 'scroll-lock';
-import { selectTweaker } from "../../js/libs/selectTweaker";
 import { makeModalFrame } from "../../js/libs/modal";
+import { selectTweaker } from "../../js/libs/selectTweaker";
 
 (() => {
 	const setPlayButton = (content, video) => {
