@@ -59,13 +59,13 @@
 </div>
 
 <div class="cards mb1">
-	<h1 class="cards__title title mb3 container">Услуги Для Гостей<br> Таиланда</h1>
+	<h1 class="cards__title title mb3 container" data-animation>Услуги Для Гостей<br> Таиланда</h1>
 	<div class="cards__intro title title_subtitle mb2 container">Визовые услуги:</div>
 	<div class="cards__inner container">
-		@@include("_card-b.html", { cls:'cards__item', image:'card-image-2.png', title:'Бордер - ран в Камбоджу из Паттайи' })
-		@@include("_card-b.html", { cls:'cards__item', image:'card-image-2.png', title:'Виза - ран в Лаос' })
-		@@include("_card-b.html", { cls:'cards__item', image:'card-image-2.png', title:'Туристическая виза MTR' })
-		@@include("_card-b.html", { cls:'cards__item', image:'card-image-2.png', title:'Туристическая виза - электронная TR' })
+		@@include("_card-b.html", { cls:'cards__item', image:'card-image-2.png', title:'Бордер - ран в Камбоджу из Паттайи', anim: '0.8' })
+		@@include("_card-b.html", { cls:'cards__item', image:'card-image-2.png', title:'Виза - ран в Лаос', anim: '0.8' })
+		@@include("_card-b.html", { cls:'cards__item', image:'card-image-2.png', title:'Туристическая виза MTR', anim: '0.8' })
+		@@include("_card-b.html", { cls:'cards__item', image:'card-image-2.png', title:'Туристическая виза - электронная TR', anim: '0.8' })
 	</div>
 </div>
 
@@ -224,10 +224,10 @@
 <div class="cards mb1">
 	<h2 class="cards__intro title title_subtitle mb2 container">Банковские услуги:</h2>
 	<div class="cards__inner container">
-		@@include("_card-b.html", { cls:'cards__item', image:'card-image-3.png', title:'заголовок и он может быть такой длинный' })
-		@@include("_card-b.html", { cls:'cards__item', image:'card-image-3.png', title:'заголовок и он может быть такой длинный' })
-		@@include("_card-b.html", { cls:'cards__item', image:'card-image-3.png', title:'заголовок и он может быть такой длинный' })
-		@@include("_card-b.html", { cls:'cards__item', image:'card-image-3.png', title:'заголовок и он может быть такой длинный' })
+		@@include("_card-b.html", { cls:'cards__item', image:'card-image-3.png', title:'заголовок и он может быть такой длинный', anim: '0.8' })
+		@@include("_card-b.html", { cls:'cards__item', image:'card-image-3.png', title:'заголовок и он может быть такой длинный', anim: '0.8' })
+		@@include("_card-b.html", { cls:'cards__item', image:'card-image-3.png', title:'заголовок и он может быть такой длинный', anim: '0.8' })
+		@@include("_card-b.html", { cls:'cards__item', image:'card-image-3.png', title:'заголовок и он может быть такой длинный', anim: '0.8' })
 	</div>
 </div>
 
@@ -261,10 +261,10 @@
 <div class="cards mb1">
 	<h2 class="cards__title title title_subtitle mb2 container">Услуги в области права</h2>
 	<div class="cards__inner container">
-		@@include("_card-b.html", { cls:'service__card', image:'card-image-2.png', title:'Услуги адвоката по Уголовному праву', button: true })
-		@@include("_card-b.html", { cls:'service__card', image:'card-image-2.png', title:'Услуги адвоката по Уголовному праву', button: true })
-		@@include("_card-b.html", { cls:'service__card', image:'card-image-2.png', title:'Услуги адвоката по Уголовному праву', button: true })
-		@@include("_card-b.html", { cls:'service__card', image:'card-image-2.png', title:'Услуги адвоката по Уголовному праву', button: true })
+		@@include("_card-b.html", { cls:'service__card', image:'card-image-2.png', title:'Услуги адвоката по Уголовному праву', button: true, anim: '0.8' })
+		@@include("_card-b.html", { cls:'service__card', image:'card-image-2.png', title:'Услуги адвоката по Уголовному праву', button: true, anim: '0.8' })
+		@@include("_card-b.html", { cls:'service__card', image:'card-image-2.png', title:'Услуги адвоката по Уголовному праву', button: true, anim: '0.8' })
+		@@include("_card-b.html", { cls:'service__card', image:'card-image-2.png', title:'Услуги адвоката по Уголовному праву', button: true, anim: '0.8' })
 	</div>
 </div>
 
@@ -284,7 +284,7 @@
 
 <section class="work mb1">
 	<div class="work__inner container">
-		<h2 class="work__title title mb2">Как мы работаем</h2>
+		<h2 class="work__title title mb2" data-animation>Как мы работаем</h2>
 		<div class="work__items">
 			<div class="work__item">
 				<div class="work__image"><img src="./images/work-image-1.png" alt=""></div>
@@ -312,7 +312,7 @@
 
 <section class="reviews mb1">
 	<div class="reviews__inner container">
-		<h2 class="reviews__title title mb2">Отзывы Клиентов</h2>
+		<h2 class="reviews__title title mb2" data-animation>Отзывы Клиентов</h2>
 		<div class="reviews__slider swiper">
 			<div class="swiper-wrapper">
 				<div class="reviews__slide swiper-slide">
@@ -396,7 +396,7 @@
 
 <section class="faq mb1">
 	<div class="faq__inner container">
-		<h2 class="faq__title title mb2">Часто-задаваемые вопросы</h2>
+		<h2 class="faq__title title mb2" data-animation>Часто-задаваемые вопросы</h2>
 		<div class="faq__items">
 			<div class="faq__item">
 				<h4 class="faq__i-title">Можно ли сейчас ехать в Сочи?</h4>
@@ -445,7 +445,7 @@
 </section>
 
 <section class="contact mb1">
-	<h2 class="contact__title title mb2 container">Контакты</h2>
+	<h2 class="contact__title title mb2 container" data-animation>Контакты</h2>
 	<div class="contact__inner container">
 		<div class="contact__side">
 			<div class="contact__text">
@@ -472,7 +472,9 @@
 </section>
 
 <section class="map">
-	<div class="map__inner" id="map"></div>
+	<div class="map__inner">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d7777.706205639904!2d100.86227972286743!3d12.917161399240456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDU0JzU5LjQiTiAxMDDCsDUyJzAwLjEiRQ!5e0!3m2!1sru!2skz!4v1689779648699!5m2!1sru!2skz" width="100%" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
 </section>
 
 @@include("_bottom.html")

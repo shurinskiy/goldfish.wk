@@ -1,4 +1,4 @@
-.map {
+.map-ydx {
 	$self: &;
 	margin-bottom: 120px;
 	
@@ -16,18 +16,18 @@
 		max-width: 1200px;
 		width: calc(100% - 40px);
 		margin: 0 auto;
-		background: url('#{$images-path}map-ggl-bg.png') center / cover no-repeat transparent;
+		background: url('#{$images-path}map-bg.png') center / cover no-repeat transparent;
 		
 		@include media('<=xs') {
 			border-radius: 50px;
 		}
 		
+		[class*="copyrights-pane"] {
+			display: none;
+		}
+		
 		@include media('<=xs') {
 			width: calc(100% - 30px);
-		}
-
-		iframe {
-			border: 0;
 		}
 	}
 }

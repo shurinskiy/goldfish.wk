@@ -73,7 +73,13 @@ body, html {
 	display: flex;
 	flex-flow: column nowrap;
 }
-// .main { flex: 1 0 auto; }
+
+body { 
+	@include media('<=sm') {
+		padding-top: 60px;
+	}
+}
+
 .footer { 
 	flex: 0 0 auto; 
 	margin-top: auto; 

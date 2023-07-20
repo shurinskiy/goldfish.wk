@@ -3,6 +3,20 @@
 	color: $secondary;
 	font-family: "PEB", sans-serif;
 	font-size: 40px;
+	@keyframes titleFadeInUp {
+		from { opacity: 0; transform: translateY(30px); }
+		to { opacity: 1; transform: translateY(0)}
+	}
+
+	&[data-animation] {
+		opacity: 0;
+
+		&.showed {
+			animation: titleFadeInUp 0.5s;
+			animation-delay: 0.3s;
+			animation-fill-mode: forwards;
+		}
+	}
 	
 	@include media('<=sm') {
 		font-size: 36px;

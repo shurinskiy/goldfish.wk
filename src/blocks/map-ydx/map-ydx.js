@@ -1,7 +1,7 @@
 import ymaps from 'ymaps';
 
 (() => {
-	const area = document.getElementById('map');
+	const area = document.getElementById('map-ydx');
 
 	if (! area) return;
 

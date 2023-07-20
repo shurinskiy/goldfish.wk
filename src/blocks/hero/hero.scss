@@ -1,5 +1,10 @@
 .hero {
 	$self: &;
+	@keyframes fadeInUp {
+		from { opacity: 0; transform: translateY(30px); }
+		to { opacity: 1; transform: translateY(0)}
+	}
+	  
 	
 	&__inner {
 		padding-top: 80px;
@@ -31,6 +36,7 @@
 		position: absolute;
 		top: 45%;
 		left: -70px;
+		// transition: transform 0.5s;
 		
 		@include media('<=sm') {
 			top: 80px;
@@ -85,6 +91,9 @@
 		display: inline-block;
 		padding: 20px 35px 0 100px;
 		margin-bottom: 20px;
+		animation: fadeInUp 1.0s;
+		animation-fill-mode: forwards;
+		opacity: 0;
 		
 		@include media('<=sm') {
 			padding: 20px 35px 0 0;
@@ -136,6 +145,10 @@
 		color: $primary;
 		font-size: 28px;
 		padding-left: 200px;
+		animation: fadeInUp 1.0s;
+		animation-delay: 0.5s;
+		animation-fill-mode: forwards;
+		opacity: 0;
 		
 		@include media('<=sm') {
 			padding: 0;

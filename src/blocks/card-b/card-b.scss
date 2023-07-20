@@ -4,6 +4,25 @@
 	border-radius: 30px;
 	display: flex;
 	flex-flow: column nowrap;
+	@keyframes cardFadeInUp {
+		from { opacity: 0; transform: translateY(100px); }
+		to { opacity: 1; transform: translateY(0)}
+	}
+
+	&[data-animation] {
+		opacity: 0;
+
+		&.showed {
+			animation: cardFadeInUp 0.7s;
+			animation-fill-mode: forwards;
+
+			@for $i from 1 through 10 {
+				&:nth-child(#{$i}) {
+					animation-delay: #{$i * 0.3}s;
+				}
+			}
+		}
+	}
 
 	&__image {
 		display: block;
