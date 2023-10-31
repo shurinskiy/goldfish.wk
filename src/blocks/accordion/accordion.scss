@@ -1,5 +1,6 @@
 .accordion {
 	$self: &;
+	@keyframes accordion_show_fade { from { opacity: 0; } to { opacity: 1; }}
 
 	&__title {
 
@@ -9,10 +10,22 @@
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-gap: 26px;
+
+		&_ajax {
+			#{$self}__card {
+				animation: accordion_show_fade 0.3s;
+			}
+
+			img.loader {
+				display: block;
+				margin: 20px auto 0;
+			}
+		}
+	
 	}
 
 	&__card {
-
+		grid-column: 1 span;
 	}
 
 	&__buttons {

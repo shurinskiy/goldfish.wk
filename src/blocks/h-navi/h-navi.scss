@@ -16,6 +16,22 @@
 		backdrop-filter: blur(4px);
 	}
 
+	&_orange {
+		#{$self}__lang a.active {
+			background-color: $accent;
+		}
+
+		#{$self}__button {
+			&_tel::before {
+				background-image: url('#{$images-path}icons-sprite.svg#icon-phone-view-orange');
+			}
+
+			&_tgm::before {
+				background-image: url('#{$images-path}icons-sprite.svg#icon-tgm-view-orange');
+			}
+		}
+	}
+
 	&__inner {
 		box-sizing: border-box;
 		width: 100%;
@@ -92,6 +108,8 @@
 	&__lang {
 		font-family: "PM", sans-serif;
 		font-size: 10px;
+		display: flex;
+		align-items: center;
 		
 		a {
 			color: inherit;
@@ -138,19 +156,18 @@
 		&::before {
 			display: block;
 			content: '';
-			height: 8px;
+			height: 10px;
 			width: 10px;
 			margin-right: 5px;
 			flex-shrink: 0;
 			background-color: transparent;
 			background-repeat: no-repeat;
 			background-position: center;
-			background-size: contain;
+			background-size: 100% 100%;
 		}
 		
 		&_tel::before {
 			background-image: url('#{$images-path}icons-sprite.svg#icon-phone-view-accent');
-			width: 8px;
 			
 			@include media('<=sm') {
 				height: 13px;

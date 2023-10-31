@@ -43,6 +43,10 @@
 		border-radius: 50%;
 		height: 100px;
 		width: 100px;
+		
+		&_yellow {
+			background: linear-gradient(180deg, #F5F9FB 0%, #FFC939 100%);
+		}
 
 		img {
 			display: block;

@@ -9,13 +9,13 @@
 </head> 
 <body class=""> 
  
-<header class="header"> 
+<header class="header "> 
 	<div class="header__inner container">
 		<a class="header__logo" href="./">
 			<img src="./images/logo.svg" alt="">
 			<img src="./images/logo-mobile.svg" alt="">
 		</a>
-		<div class="header__navi h-navi">
+		<div class="header__navi h-navi ">
 			<button class="h-navi__close"></button>
 			<div class="h-navi__inner">
 				<nav class="h-navi__menu" data-scroll-lock-scrollable>
@@ -54,7 +54,7 @@
 	</video>
 </div> -->
 
-<div class="find">
+<div class="find mb1">
 	<div class="find__inner container">
 		<form class="find__search">
 			<input type="text" placeholder="Искать в услугах">
@@ -180,7 +180,7 @@
 	<div class="card-a__content">
 		<div class="card-a__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить внутреннюю коммуникацию в компании, найти новых партнеров и инвесторов в Таиланде, а также создать благоприятную обстановку для развития своего дела.</div>
 		<div class="card-a__buttons">
-			<button class="card-a__button button button_fill-yellow" data-modal="request" data-info="Туристическая виза в Камбоджу">Заказать Услугу</button>
+			<a class="card-a__button button button_fill-yellow" href="./details.html">Узнать больше</a>
 			<button class="card-a__button button button_outline-green button_icon-tgm" data-modal="request" data-info="Туристическая виза в Камбоджу">Задать Вопрос</button>
 		</div>
 	</div>
@@ -199,7 +199,7 @@
 	<div class="card-a__content">
 		<div class="card-a__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить внутреннюю коммуникацию в компании, найти новых партнеров и инвесторов в Таиланде, а также создать благоприятную обстановку для развития своего дела.</div>
 		<div class="card-a__buttons">
-			<button class="card-a__button button button_fill-yellow" data-modal="request" data-info="Регистрация в Таиланде (прописка)">Заказать Услугу</button>
+			<a class="card-a__button button button_fill-yellow" href="./details.html">Узнать больше</a>
 			<button class="card-a__button button button_outline-green button_icon-tgm" data-modal="request" data-info="Регистрация в Таиланде (прописка)">Задать Вопрос</button>
 		</div>
 	</div>
@@ -218,7 +218,7 @@
 	<div class="card-a__content">
 		<div class="card-a__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить внутреннюю коммуникацию в компании, найти новых партнеров и инвесторов в Таиланде, а также создать благоприятную обстановку для развития своего дела.</div>
 		<div class="card-a__buttons">
-			<button class="card-a__button button button_fill-yellow" data-modal="request" data-info="Регистрация в Таиланде (прописка) + договор 12 мес.">Заказать Услугу</button>
+			<a class="card-a__button button button_fill-yellow" href="./details.html">Узнать больше</a>
 			<button class="card-a__button button button_outline-green button_icon-tgm" data-modal="request" data-info="Регистрация в Таиланде (прописка) + договор 12 мес.">Задать Вопрос</button>
 		</div>
 	</div>
@@ -237,7 +237,7 @@
 	<div class="card-a__content">
 		<div class="card-a__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить внутреннюю коммуникацию в компании, найти новых партнеров и инвесторов в Таиланде, а также создать благоприятную обстановку для развития своего дела.</div>
 		<div class="card-a__buttons">
-			<button class="card-a__button button button_fill-yellow" data-modal="request" data-info="Резидент-сертификат">Заказать Услугу</button>
+			<a class="card-a__button button button_fill-yellow" href="./details.html">Узнать больше</a>
 			<button class="card-a__button button button_outline-green button_icon-tgm" data-modal="request" data-info="Резидент-сертификат">Задать Вопрос</button>
 		</div>
 	</div>
@@ -256,7 +256,7 @@
 	<div class="card-a__content">
 		<div class="card-a__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить внутреннюю коммуникацию в компании, найти новых партнеров и инвесторов в Таиланде, а также создать благоприятную обстановку для развития своего дела.</div>
 		<div class="card-a__buttons">
-			<button class="card-a__button button button_fill-yellow" data-modal="request" data-info="Помощь при подготовке документов на студ. визу">Заказать Услугу</button>
+			<a class="card-a__button button button_fill-yellow" href="./details.html">Узнать больше</a>
 			<button class="card-a__button button button_outline-green button_icon-tgm" data-modal="request" data-info="Помощь при подготовке документов на студ. визу">Задать Вопрос</button>
 		</div>
 	</div>
@@ -269,55 +269,63 @@
 		<div class="swiper-wrapper">
 			<div class="banner__slide swiper-slide card-s card-s_type-1">
 				<div class="card-s__side">
-					<h3 class="card-s__title">Тайские Водительские Права «A» и «B» За Три Дня</h3>
+					<a class="card-s__title" href="./">
+						<h3>Тайские Водительские Права «A» и «B» За Три Дня</h3>
+					</a>
 					<div class="card-s__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить.</div>
 					<div class="card-s__bottom">
 						<button class="card-s__button button button_fill-white button_shadow" data-modal="request" data-info="Тайские Водительские Права">Заказать Услугу</button>
 						<span class="card-s__price">За 12000 TBC</span>
 					</div>
 				</div>
-				<div class="card-s__image">
+				<a class="card-s__image" href="./">
 					<img src="./images/banner-image-1.png" alt="">
-				</div>
+				</a>
 			</div>
 			<div class="banner__slide swiper-slide card-s card-s_type-2">
 				<div class="card-s__side">
-					<h3 class="card-s__title">Тайские Водительские Права «A» и «B» За Три Дня</h3>
+					<a class="card-s__title" href="./">
+						<h3>Тайские Водительские Права «A» и «B» За Три Дня</h3>
+					</a>
 					<div class="card-s__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить.</div>
 					<div class="card-s__bottom">
 						<button class="card-s__button button button_fill-white button_shadow" data-modal="request" data-info="Тайские Водительские Права">Заказать Услугу</button>
 						<span class="card-s__price">За 12000 TBC</span>
 					</div>
 				</div>
-				<div class="card-s__image">
+				<a class="card-s__image" href="./">
 					<img src="./images/banner-image-2.png" alt="">
-				</div>
+				</a>
 			</div>
 			<div class="banner__slide swiper-slide card-s card-s_type-1">
 				<div class="card-s__side">
-					<h3 class="card-s__title">Тайские Водительские Права «A» и «B» За Три Дня</h3>
+					<a class="card-s__title" href="./">
+						<h3>Тайские Водительские Права «A» и «B» За Три Дня</h3>
+					</a>
 					<div class="card-s__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить.</div>
 					<div class="card-s__bottom">
 						<button class="card-s__button button button_fill-white button_shadow" data-modal="request" data-info="Тайские Водительские Права">Заказать Услугу</button>
 						<span class="card-s__price">За 12000 TBC</span>
 					</div>
 				</div>
-				<div class="card-s__image">
+				<a class="card-s__image" href="./">
 					<img src="./images/banner-image-3.png" alt="">
-				</div>
+				</a>
 			</div>
 			<div class="banner__slide swiper-slide card-s card-s_type-3">
 				<div class="card-s__side">
-					<h3 class="card-s__title">Регистрация компании с уставным капиталом до 1 миллиона </h3>
+					<a class="card-s__title" href="./">
+						<h3>Регистрация компании с уставным капиталом до 1 миллиона </h3>
+					</a>
 					<div class="card-s__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить.</div>
 					<div class="card-s__bottom">
 						<button class="card-s__button button button_fill-white button_shadow" data-modal="request" data-info="Регистрация компании">Заказать Услугу</button>
 						<span class="card-s__price">За 30000 TBC</span>
 					</div>
 				</div>
-				<div class="card-s__image">
+				<a class="card-s__image" href="./">
 					<img src="./images/banner-image-4.png" alt="">
-				</div>
+				</a>
 			</div>
 		</div>
 		<div class="banner__s-navi">
@@ -345,7 +353,7 @@
 	<div class="card-a__content">
 		<div class="card-a__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить внутреннюю коммуникацию в компании, найти новых партнеров и инвесторов в Таиланде, а также создать благоприятную обстановку для развития своего дела.</div>
 		<div class="card-a__buttons">
-			<button class="card-a__button button button_fill-yellow" data-modal="request" data-info="Конвертация национального ВУ в тайское ВУt">Заказать Услугу</button>
+			<a class="card-a__button button button_fill-yellow" href="./details.html">Узнать больше</a>
 			<button class="card-a__button button button_outline-green button_icon-tgm" data-modal="request" data-info="Конвертация национального ВУ в тайское ВУt">Задать Вопрос</button>
 		</div>
 	</div>
@@ -364,7 +372,7 @@
 	<div class="card-a__content">
 		<div class="card-a__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить внутреннюю коммуникацию в компании, найти новых партнеров и инвесторов в Таиланде, а также создать благоприятную обстановку для развития своего дела.</div>
 		<div class="card-a__buttons">
-			<button class="card-a__button button button_fill-yellow" data-modal="request" data-info="Сдача экзамена (теория + практика) кат А.">Заказать Услугу</button>
+			<a class="card-a__button button button_fill-yellow" href="./details.html">Узнать больше</a>
 			<button class="card-a__button button button_outline-green button_icon-tgm" data-modal="request" data-info="Сдача экзамена (теория + практика) кат А.">Задать Вопрос</button>
 		</div>
 	</div>
@@ -383,7 +391,7 @@
 	<div class="card-a__content">
 		<div class="card-a__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить внутреннюю коммуникацию в компании, найти новых партнеров и инвесторов в Таиланде, а также создать благоприятную обстановку для развития своего дела.</div>
 		<div class="card-a__buttons">
-			<button class="card-a__button button button_fill-yellow" data-modal="request" data-info="Сдача экзамена (теория + практика) кат В.">Заказать Услугу</button>
+			<a class="card-a__button button button_fill-yellow" href="./details.html">Узнать больше</a>
 			<button class="card-a__button button button_outline-green button_icon-tgm" data-modal="request" data-info="Сдача экзамена (теория + практика) кат В.">Задать Вопрос</button>
 		</div>
 	</div>
@@ -402,7 +410,7 @@
 	<div class="card-a__content">
 		<div class="card-a__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить внутреннюю коммуникацию в компании, найти новых партнеров и инвесторов в Таиланде, а также создать благоприятную обстановку для развития своего дела.</div>
 		<div class="card-a__buttons">
-			<button class="card-a__button button button_fill-yellow" data-modal="request" data-info="Обновление прав с истекшим сроком менее 1 года">Заказать Услугу</button>
+			<a class="card-a__button button button_fill-yellow" href="./details.html">Узнать больше</a>
 			<button class="card-a__button button button_outline-green button_icon-tgm" data-modal="request" data-info="Обновление прав с истекшим сроком менее 1 года">Задать Вопрос</button>
 		</div>
 	</div>
@@ -421,7 +429,7 @@
 	<div class="card-a__content">
 		<div class="card-a__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить внутреннюю коммуникацию в компании, найти новых партнеров и инвесторов в Таиланде, а также создать благоприятную обстановку для развития своего дела.</div>
 		<div class="card-a__buttons">
-			<button class="card-a__button button button_fill-yellow" data-modal="request" data-info="Обновление прав с истекшим сроком более 1 года кат А.">Заказать Услугу</button>
+			<a class="card-a__button button button_fill-yellow" href="./details.html">Узнать больше</a>
 			<button class="card-a__button button button_outline-green button_icon-tgm" data-modal="request" data-info="Обновление прав с истекшим сроком более 1 года кат А.">Задать Вопрос</button>
 		</div>
 	</div>
@@ -440,7 +448,7 @@
 	<div class="card-a__content">
 		<div class="card-a__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить внутреннюю коммуникацию в компании, найти новых партнеров и инвесторов в Таиланде, а также создать благоприятную обстановку для развития своего дела.</div>
 		<div class="card-a__buttons">
-			<button class="card-a__button button button_fill-yellow" data-modal="request" data-info="Обновление прав с истекшим сроком более 1 года кат В.">Заказать Услугу</button>
+			<a class="card-a__button button button_fill-yellow" href="./details.html">Узнать больше</a>
 			<button class="card-a__button button button_outline-green button_icon-tgm" data-modal="request" data-info="Обновление прав с истекшим сроком более 1 года кат В.">Задать Вопрос</button>
 		</div>
 	</div>
@@ -459,7 +467,7 @@
 	<div class="card-a__content">
 		<div class="card-a__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить внутреннюю коммуникацию в компании, найти новых партнеров и инвесторов в Таиланде, а также создать благоприятную обстановку для развития своего дела.</div>
 		<div class="card-a__buttons">
-			<button class="card-a__button button button_fill-yellow" data-modal="request" data-info="Сопровождение Покупки автомобиля">Заказать Услугу</button>
+			<a class="card-a__button button button_fill-yellow" href="./details.html">Узнать больше</a>
 			<button class="card-a__button button button_outline-green button_icon-tgm" data-modal="request" data-info="Сопровождение Покупки автомобиля">Задать Вопрос</button>
 		</div>
 	</div>
@@ -478,7 +486,7 @@
 	<div class="card-a__content">
 		<div class="card-a__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить внутреннюю коммуникацию в компании, найти новых партнеров и инвесторов в Таиланде, а также создать благоприятную обстановку для развития своего дела.</div>
 		<div class="card-a__buttons">
-			<button class="card-a__button button button_fill-yellow" data-modal="request" data-info="Полное сопровождение при переоформлении ТС">Заказать Услугу</button>
+			<a class="card-a__button button button_fill-yellow" href="./details.html">Узнать больше</a>
 			<button class="card-a__button button button_outline-green button_icon-tgm" data-modal="request" data-info="Полное сопровождение при переоформлении ТС">Задать Вопрос</button>
 		</div>
 	</div>
@@ -491,55 +499,63 @@
 		<div class="swiper-wrapper">
 			<div class="banner__slide swiper-slide card-s card-s_type-1">
 				<div class="card-s__side">
-					<h3 class="card-s__title">Тайские Водительские Права «A» и «B» За Три Дня</h3>
+					<a class="card-s__title" href="./">
+						<h3>Тайские Водительские Права «A» и «B» За Три Дня</h3>
+					</a>
 					<div class="card-s__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить.</div>
 					<div class="card-s__bottom">
 						<button class="card-s__button button button_fill-white button_shadow" data-modal="request" data-info="Тайские Водительские Права">Заказать Услугу</button>
 						<span class="card-s__price">За 12000 TBC</span>
 					</div>
 				</div>
-				<div class="card-s__image">
+				<a class="card-s__image" href="./">
 					<img src="./images/banner-image-3.png" alt="">
-				</div>
+				</a>
 			</div>
 			<div class="banner__slide swiper-slide card-s card-s_type-1">
 				<div class="card-s__side">
-					<h3 class="card-s__title">Тайские Водительские Права «A» и «B» За Три Дня</h3>
+					<a class="card-s__title" href="./">
+						<h3>Тайские Водительские Права «A» и «B» За Три Дня</h3>
+					</a>
 					<div class="card-s__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить.</div>
 					<div class="card-s__bottom">
 						<button class="card-s__button button button_fill-white button_shadow" data-modal="request" data-info="Тайские Водительские Права">Заказать Услугу</button>
 						<span class="card-s__price">За 12000 TBC</span>
 					</div>
 				</div>
-				<div class="card-s__image">
+				<a class="card-s__image" href="./">
 					<img src="./images/banner-image-1.png" alt="">
-				</div>
+				</a>
 			</div>
 			<div class="banner__slide swiper-slide card-s card-s_type-2">
 				<div class="card-s__side">
-					<h3 class="card-s__title">Тайские Водительские Права «A» и «B» За Три Дня</h3>
+					<a class="card-s__title" href="./">
+						<h3>Тайские Водительские Права «A» и «B» За Три Дня</h3>
+					</a>
 					<div class="card-s__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить.</div>
 					<div class="card-s__bottom">
 						<button class="card-s__button button button_fill-white button_shadow" data-modal="request" data-info="Тайские Водительские Права">Заказать Услугу</button>
 						<span class="card-s__price">За 12000 TBC</span>
 					</div>
 				</div>
-				<div class="card-s__image">
+				<a class="card-s__image" href="./">
 					<img src="./images/banner-image-2.png" alt="">
-				</div>
+				</a>
 			</div>
 			<div class="banner__slide swiper-slide card-s card-s_type-3">
 				<div class="card-s__side">
-					<h3 class="card-s__title">Регистрация компании с уставным капиталом до 1 миллиона </h3>
+					<a class="card-s__title" href="./">
+						<h3>Регистрация компании с уставным капиталом до 1 миллиона </h3>
+					</a>
 					<div class="card-s__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить.</div>
 					<div class="card-s__bottom">
 						<button class="card-s__button button button_fill-white button_shadow" data-modal="request" data-info="Регистрация компании">Заказать Услугу</button>
 						<span class="card-s__price">За 30000 TBC</span>
 					</div>
 				</div>
-				<div class="card-s__image">
+				<a class="card-s__image" href="./">
 					<img src="./images/banner-image-4.png" alt="">
-				</div>
+				</a>
 			</div>
 		</div>
 		<div class="banner__s-navi">
@@ -630,12 +646,12 @@
 		<div class="free__form form">
 			<div class="form__body">
 				<label class="form__field form__field_text">
-					<input type="text" placeholder="Имя">
+					<input type="text" name="form_name" placeholder="Имя">
 				</label>
 				<label class="form__field form__field_text">
-					<input type="text" placeholder="Mob/Tlg/Whts">
+					<input type="text" name="form_phone" placeholder="Mob/Tlg/Whts">
 				</label>
-				<select class="form__field form__field_sect">
+				<select name="form_theme" class="form__field form__field_sect">
 					<option value="Водительские права">Водительские права</option>
 					<option value="Регистрация компании">Регистрация компании</option>
 				</select>
@@ -729,7 +745,7 @@
 	<div class="card-a__content">
 		<div class="card-a__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить внутреннюю коммуникацию в компании, найти новых партнеров и инвесторов в Таиланде, а также создать благоприятную обстановку для развития своего дела.</div>
 		<div class="card-a__buttons">
-			<button class="card-a__button button button_fill-yellow" data-modal="request" data-info="Процедура регистрации брака в Таиланде">Заказать Услугу</button>
+			<a class="card-a__button button button_fill-yellow" href="./details.html">Узнать больше</a>
 			<button class="card-a__button button button_outline-green button_icon-tgm" data-modal="request" data-info="Процедура регистрации брака в Таиланде">Задать Вопрос</button>
 		</div>
 	</div>
@@ -748,7 +764,7 @@
 	<div class="card-a__content">
 		<div class="card-a__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить внутреннюю коммуникацию в компании, найти новых партнеров и инвесторов в Таиланде, а также создать благоприятную обстановку для развития своего дела.</div>
 		<div class="card-a__buttons">
-			<button class="card-a__button button button_fill-yellow" data-modal="request" data-info="Расторжение брака в Таиланде">Заказать Услугу</button>
+			<a class="card-a__button button button_fill-yellow" href="./details.html">Узнать больше</a>
 			<button class="card-a__button button button_outline-green button_icon-tgm" data-modal="request" data-info="Расторжение брака в Таиланде">Задать Вопрос</button>
 		</div>
 	</div>
@@ -767,7 +783,7 @@
 	<div class="card-a__content">
 		<div class="card-a__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить внутреннюю коммуникацию в компании, найти новых партнеров и инвесторов в Таиланде, а также создать благоприятную обстановку для развития своего дела.</div>
 		<div class="card-a__buttons">
-			<button class="card-a__button button button_fill-yellow" data-modal="request" data-info="Международное усыновление в Таиланде">Заказать Услугу</button>
+			<a class="card-a__button button button_fill-yellow" href="./details.html">Узнать больше</a>
 			<button class="card-a__button button button_outline-green button_icon-tgm" data-modal="request" data-info="Международное усыновление в Таиланде">Задать Вопрос</button>
 		</div>
 	</div>
@@ -785,7 +801,7 @@
 	<div class="card-a__content">
 		<div class="card-a__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить внутреннюю коммуникацию в компании, найти новых партнеров и инвесторов в Таиланде, а также создать благоприятную обстановку для развития своего дела.</div>
 		<div class="card-a__buttons">
-			<button class="card-a__button button button_fill-yellow" data-modal="request" data-info="Закон об алиментах в Таиланде">Заказать Услугу</button>
+			<a class="card-a__button button button_fill-yellow" href="./details.html">Узнать больше</a>
 			<button class="card-a__button button button_outline-green button_icon-tgm" data-modal="request" data-info="Закон об алиментах в Таиланде">Задать Вопрос</button>
 		</div>
 	</div>
@@ -803,7 +819,7 @@
 	<div class="card-a__content">
 		<div class="card-a__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить внутреннюю коммуникацию в компании, найти новых партнеров и инвесторов в Таиланде, а также создать благоприятную обстановку для развития своего дела.</div>
 		<div class="card-a__buttons">
-			<button class="card-a__button button button_fill-yellow" data-modal="request" data-info="Бракоразводное соглашение">Заказать Услугу</button>
+			<a class="card-a__button button button_fill-yellow" href="./details.html">Узнать больше</a>
 			<button class="card-a__button button button_outline-green button_icon-tgm" data-modal="request" data-info="Бракоразводное соглашение">Задать Вопрос</button>
 		</div>
 	</div>
@@ -821,7 +837,7 @@
 	<div class="card-a__content">
 		<div class="card-a__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить внутреннюю коммуникацию в компании, найти новых партнеров и инвесторов в Таиланде, а также создать благоприятную обстановку для развития своего дела.</div>
 		<div class="card-a__buttons">
-			<button class="card-a__button button button_fill-yellow" data-modal="request" data-info="Вступление в право наследования дистанционно">Заказать Услугу</button>
+			<a class="card-a__button button button_fill-yellow" href="./details.html">Узнать больше</a>
 			<button class="card-a__button button button_outline-green button_icon-tgm" data-modal="request" data-info="Вступление в право наследования дистанционно">Задать Вопрос</button>
 		</div>
 	</div>
@@ -839,7 +855,7 @@
 	<div class="card-a__content">
 		<div class="card-a__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить внутреннюю коммуникацию в компании, найти новых партнеров и инвесторов в Таиланде, а также создать благоприятную обстановку для развития своего дела.</div>
 		<div class="card-a__buttons">
-			<button class="card-a__button button button_fill-yellow" data-modal="request" data-info="Вступление в наследство в Таиланде">Заказать Услугу</button>
+			<a class="card-a__button button button_fill-yellow" href="./details.html">Узнать больше</a>
 			<button class="card-a__button button button_outline-green button_icon-tgm" data-modal="request" data-info="Вступление в наследство в Таиланде">Задать Вопрос</button>
 		</div>
 	</div>
@@ -857,7 +873,7 @@
 	<div class="card-a__content">
 		<div class="card-a__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить внутреннюю коммуникацию в компании, найти новых партнеров и инвесторов в Таиланде, а также создать благоприятную обстановку для развития своего дела.</div>
 		<div class="card-a__buttons">
-			<button class="card-a__button button button_fill-yellow" data-modal="request" data-info="Взыскание долгов в Таиланде">Заказать Услугу</button>
+			<a class="card-a__button button button_fill-yellow" href="./details.html">Узнать больше</a>
 			<button class="card-a__button button button_outline-green button_icon-tgm" data-modal="request" data-info="Взыскание долгов в Таиланде">Задать Вопрос</button>
 		</div>
 	</div>
@@ -875,7 +891,7 @@
 	<div class="card-a__content">
 		<div class="card-a__text">Это решение проблем, связанных не только с внешними и внутренними факторами бизнеса, это способ улучшить имидж, наладить внутреннюю коммуникацию в компании, найти новых партнеров и инвесторов в Таиланде, а также создать благоприятную обстановку для развития своего дела.</div>
 		<div class="card-a__buttons">
-			<button class="card-a__button button button_fill-yellow" data-modal="request" data-info="Арбитраж и посредничество">Заказать Услугу</button>
+			<a class="card-a__button button button_fill-yellow" href="./details.html">Узнать больше</a>
 			<button class="card-a__button button button_outline-green button_icon-tgm" data-modal="request" data-info="Арбитраж и посредничество">Задать Вопрос</button>
 		</div>
 	</div>
@@ -1108,18 +1124,18 @@
 			<h2 class="form__title">Оставьте свои контакты<br> и наши менеджеры отправят вам информацию в ближайшее время</h2>
 			<div class="form__body">
 				<label class="form__field form__field_info">
-					<input type="text" placeholder="Информация">
+					<input type="text" name="form_info" placeholder="Информация">
 				</label>
 				<label class="form__field form__field_text">
-					<input type="text" placeholder="Имя">
+					<input type="text" name="form_name" placeholder="Имя">
 				</label>
 				<label class="form__field form__field_region">
-					<input type="text" placeholder="Регион">
+					<input type="text" name="form_region" placeholder="Регион">
 				</label>
 				<label class="form__field form__field_text">
-					<input type="text" placeholder="Mob/Tlg/Whts">
+					<input type="text" name="form_phone" placeholder="Mob/Tlg/Whts">
 				</label>
-				<select class="form__field form__field_sect">
+				<select name="form_theme" class="form__field form__field_sect">
 					<option value="Водительские права">Водительские права</option>
 					<option value="Регистрация компании">Регистрация компании</option>
 				</select>

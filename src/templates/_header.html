@@ -1,10 +1,10 @@
-<header class="header"> 
+<header class="header @@if(this.class){header_@@class}"> 
 	<div class="header__inner container">
 		<a class="header__logo" href="./">
 			<img src="./images/logo.svg" alt="">
 			<img src="./images/logo-mobile.svg" alt="">
 		</a>
-		<div class="header__navi h-navi">
+		<div class="header__navi h-navi @@if(this.color){h-navi_@@color}">
 			<button class="h-navi__close"></button>
 			<div class="h-navi__inner">
 				<nav class="h-navi__menu" data-scroll-lock-scrollable>

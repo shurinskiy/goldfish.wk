@@ -56,6 +56,8 @@
 	}
 	
 	&__title {
+		display: block;
+		text-decoration: none;
 		font-family: "PEB", sans-serif;
 		color: #fff;
 		font-size: 28px;
@@ -105,7 +107,8 @@
 	}
 	
 	&__price {
-		font-family: "PM", sans-serif;
+		// font-family: "PM", sans-serif;
+		font-family: "PL", sans-serif;
 		font-size: 13px;
 		color: #fff;
 		flex-grow: 1;
@@ -117,6 +120,7 @@
 	}
 
 	&__image {
+		display: block;
 
 		img {
 			display: block;

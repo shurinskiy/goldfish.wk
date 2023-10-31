@@ -16,7 +16,7 @@
 			animation: cardFadeInUp 0.7s;
 			animation-fill-mode: forwards;
 
-			@for $i from 1 through 10 {
+			@for $i from 1 through 15 {
 				&:nth-child(#{$i}) {
 					animation-delay: #{$i * 0.3}s;
 				}
@@ -79,7 +79,7 @@
 		border-radius: 10px;
 		color: $secondary;
 		line-height: 1.0;
-		padding: 4px 8px;
-		font-size: 16px;
+		padding: 4px 6px;
+		font-size: 15px;
 	}
 }

@@ -25,15 +25,13 @@ import { selectTweaker } from "../../js/libs/selectTweaker";
 	}
 
 	const modal = makeModalFrame({ 
-		select: '.hero__title button, .card-b__button, .card-s__button, .card-a__button, .gallery__item', 
+		select: '.hero__title button, .card-b__button, .card-s__button, .card-a__button, .gallery__item, .detail__button, .hero-c__button', 
 		scrollLock,
 		open: function({ slideshow }, button) {
-			const info = this.querySelector('.form__field_info');
 			const active = slideshow ? '.active': '';
-
-			if (info) {
-				info.value ??= button.dataset?.info;
-			}
+			const info = this.querySelector('.form__field_info input');
+			
+			if(info) info.value = button.dataset?.info;
 
 			selectTweaker(this.querySelectorAll('.form__field_sect'));
 			setPlayButton(this, this.querySelector(`video${active}`));

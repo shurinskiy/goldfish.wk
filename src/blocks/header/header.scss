@@ -1,6 +1,5 @@
 .header {
 	$self: &;
-	// background-color: $fade;
 	box-sizing: border-box;
 	background-color: rgba(239, 252, 255, 0.7);
 	border-radius: 0 0 40px 40px;
@@ -18,9 +17,12 @@
 		padding-bottom: 7px;
 		padding-top: 7px;
 		border-radius: 0;
-		// background-color: $primary;
-		background-color: rgb(13, 22, 77, 0.95);
+		background-color: rgb(13, 22, 77, 0.95) !important;
 		position: fixed;
+	}
+
+	&_opaque {
+		background-color: #F7FBFD;
 	}
 	
 	&__inner {

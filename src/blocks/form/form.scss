@@ -55,6 +55,27 @@
 		}
 	}
 
+	&__alert {
+		font-size: 14px;
+		
+		span {
+			display: block;
+
+			&.loading img {
+				display: block;
+				margin: 0 auto;
+			}
+		}
+		
+		&_success {
+			color: #0c0;
+		}
+		
+		&_error {
+			color: #c00;
+		}
+	}
+
 	&__buttons {
 		display: flex;
 		justify-content: center;

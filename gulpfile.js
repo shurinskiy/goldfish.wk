@@ -139,7 +139,8 @@ function icons() {
 		monochrome: {
 			dark: '#232B5B',
 			white: '#ffffff',
-			accent: '#32BFC6'
+			accent: '#32BFC6',
+			orange: '#FFC939'
 		}
 	}))
 	.pipe(gulp.dest(pth.pbl.img))
