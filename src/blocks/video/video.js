@@ -8,6 +8,7 @@
 			
 			video.controls = false;
 			play.className = 'video__play';
+			play.setAttribute('title', 'Play');
 			play.addEventListener('click', (e) => video.play());
 			block.append(play);
 			

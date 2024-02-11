@@ -3,20 +3,21 @@
 <head> 
 	<meta charset="UTF-8"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+	<meta name="description" content="Consulting services">
 	<link rel="shortcut icon" href="images/favicon.ico"> 
 	<link rel="stylesheet" href="style.css"> 
-	<title></title> 
+	<title>Consulting services</title> 
 </head> 
 <body class=""> 
  
 <header class="header "> 
 	<div class="header__inner container">
-		<a class="header__logo" href="./">
-			<img src="./images/logo.svg" alt="">
-			<img src="./images/logo-mobile.svg" alt="">
+		<a class="header__logo" href="./" alt="Logo">
+			<img src="./images/logo.svg" loading="lazy" alt="Logo">
+			<img src="./images/logo-mobile.svg" loading="lazy" alt="Logo">
 		</a>
 		<div class="header__navi h-navi ">
-			<button class="h-navi__close"></button>
+			<button class="h-navi__close" title="Mobile menu close"></button>
 			<div class="h-navi__inner">
 				<nav class="h-navi__menu" data-scroll-lock-scrollable>
 					<a class="h-navi__link" href="./about.html">О нас</a>
@@ -32,7 +33,7 @@
 				</div>
 			</div>
 		</div>
-		<button class="header__navi-toggle"></button>
+		<button class="header__navi-toggle" title="Mobile menu toggle"></button>
 	</div>
 </header>
 
@@ -68,10 +69,10 @@
 	<div class="cards__inner container mb2">
 		<div class="card-b cards__item" >
 	<a class="card-b__image" href="./details.html">
-		<img src="./images/card-image-2.png" alt="">
+		<img src="./images/card-image-2.webp" loading="lazy" alt="Detail image">
 	</a>
 	<div class="card-b__body">
-		<h4 class="card-b__title">Бордер - ран в Камбоджу из Паттайи</h4>
+		<h3 class="card-b__title">Бордер - ран в Камбоджу из Паттайи</h3>
 		<div class="card-b__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore euvsd fugiat nulla pariatur. Excepteur sintdsds occaecat cupidatat nonnon proident.</div>
 		<div class="card-b__bottom ">
 			
@@ -84,10 +85,10 @@
 </div>
 		<div class="card-b cards__item" >
 	<a class="card-b__image" href="./details.html">
-		<img src="./images/card-image-2.png" alt="">
+		<img src="./images/card-image-2.webp" loading="lazy" alt="Detail image">
 	</a>
 	<div class="card-b__body">
-		<h4 class="card-b__title">Виза - ран в Лаос</h4>
+		<h3 class="card-b__title">Виза - ран в Лаос</h3>
 		<div class="card-b__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore euvsd fugiat nulla pariatur. Excepteur sintdsds occaecat cupidatat nonnon proident.</div>
 		<div class="card-b__bottom ">
 			
@@ -100,10 +101,10 @@
 </div>
 		<div class="card-b cards__item" >
 	<a class="card-b__image" href="./details.html">
-		<img src="./images/card-image-2.png" alt="">
+		<img src="./images/card-image-2.webp" loading="lazy" alt="Detail image">
 	</a>
 	<div class="card-b__body">
-		<h4 class="card-b__title">Туристическая виза MTR</h4>
+		<h3 class="card-b__title">Туристическая виза MTR</h3>
 		<div class="card-b__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore euvsd fugiat nulla pariatur. Excepteur sintdsds occaecat cupidatat nonnon proident.</div>
 		<div class="card-b__bottom ">
 			
@@ -116,10 +117,10 @@
 </div>
 		<div class="card-b cards__item" >
 	<a class="card-b__image" href="./details.html">
-		<img src="./images/card-image-2.png" alt="">
+		<img src="./images/card-image-2.webp" loading="lazy" alt="Detail image">
 	</a>
 	<div class="card-b__body">
-		<h4 class="card-b__title">Туристическая виза - электронная TR</h4>
+		<h3 class="card-b__title">Туристическая виза - электронная TR</h3>
 		<div class="card-b__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore euvsd fugiat nulla pariatur. Excepteur sintdsds occaecat cupidatat nonnon proident.</div>
 		<div class="card-b__bottom ">
 			
@@ -144,8 +145,8 @@
 				<a href="./">Для Гостей Тайланда</a>
 				<a href="./">Для Бизнеса</a>
 			</nav>
-			<a class="footer__logo" href="./">
-				<img src="./images/logo-bottom.svg" alt="">
+			<a class="footer__logo" href="./" alt="Logo">
+				<img src="./images/logo-bottom.svg" loading="lazy" alt="Logo">
 			</a>
 		</div>
 		<div class="footer__contacts">
@@ -182,13 +183,14 @@
 					<option value="Регистрация компании">Регистрация компании</option>
 				</select>
 			</div>
+			<div class="form__alert"></div>
 			<div class="form__buttons">
 				<button class="form__button button button_fill-yellow">Отправить</button>
 			</div>
 		</div>
 	</div>
 	<div id="video">
-		<video controls preload="metadata" poster="./images/video-preview.jpg">
+		<video controls preload="metadata" poster="./images/video-preview.webp">
 			<source src="./images/video-small.mp4" type="video/mp4" media="all and (max-width: 480px)">
 			<source src="./images/video.mp4" type="video/mp4">
 		</video>
@@ -196,6 +198,9 @@
 </div> 
 
 <script type="text/javascript" charset="utf-8" src="jquery.min.js"></script>
-<script src="common.js"></script> 
+<script src="common.js"></script>
+<script data-b24-form="inline/3/iyhyt6" data-skip-moving="true">
+	// (function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://cdn.bitrix24.com/b27307907/crm/form/loader_3.js');
+</script>
 </body> 
 </html>

@@ -59,6 +59,7 @@
 		font-size: 14px;
 		
 		span {
+			text-align: center;
 			display: block;
 
 			&.loading img {
@@ -68,7 +69,7 @@
 		}
 		
 		&_success {
-			color: #0c0;
+			color: #32bfc6;
 		}
 		
 		&_error {

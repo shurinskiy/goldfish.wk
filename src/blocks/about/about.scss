@@ -81,11 +81,11 @@
 		}
 
 		&:nth-child(1)::before {
-			background-image: url('#{$images-path}cap-image-2.png');
+			background-image: url('#{$images-path}cap-image-2.webp');
 		}
 		
 		&:nth-child(2)::before {
-			background-image: url('#{$images-path}cap-image-3.png');
+			background-image: url('#{$images-path}cap-image-3.webp');
 		}
 	}
 }

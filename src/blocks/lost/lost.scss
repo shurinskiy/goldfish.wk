@@ -1,0 +1,42 @@
+.lost {
+	$self: &;
+
+	&__title {
+		color: $secondary;
+		font-family: "PEB", sans-serif;
+		font-size: 128px;
+		
+		@include media('<=sm') {
+			font-size: 100px;
+		}
+		
+		@include media('<=xxs') {
+			font-size: 80px;
+		}
+	}
+	
+	&__subtitle {
+		
+	}
+	
+	&__inner {
+		
+	}
+	
+	&__text {
+		font-family: "PM", sans-serif;
+		font-size: 14px;
+		
+		@include media('<=xs') {
+			font-size: 12px;
+		}
+
+		a {
+			color: $secondary;
+		}
+	}
+
+	&__find {
+
+	}
+}

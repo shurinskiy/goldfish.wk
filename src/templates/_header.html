@@ -1,11 +1,11 @@
 <header class="header @@if(this.class){header_@@class}"> 
 	<div class="header__inner container">
-		<a class="header__logo" href="./">
-			<img src="./images/logo.svg" alt="">
-			<img src="./images/logo-mobile.svg" alt="">
+		<a class="header__logo" href="./" alt="Logo">
+			<img src="./images/logo.svg" loading="lazy" alt="Logo">
+			<img src="./images/logo-mobile.svg" loading="lazy" alt="Logo">
 		</a>
 		<div class="header__navi h-navi @@if(this.color){h-navi_@@color}">
-			<button class="h-navi__close"></button>
+			<button class="h-navi__close" title="Mobile menu close"></button>
 			<div class="h-navi__inner">
 				<nav class="h-navi__menu" data-scroll-lock-scrollable>
 					<a class="h-navi__link" href="./about.html">О нас</a>
@@ -21,6 +21,6 @@
 				</div>
 			</div>
 		</div>
-		<button class="header__navi-toggle"></button>
+		<button class="header__navi-toggle" title="Mobile menu toggle"></button>
 	</div>
 </header>

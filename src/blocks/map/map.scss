@@ -16,7 +16,7 @@
 		max-width: 1200px;
 		width: calc(100% - 40px);
 		margin: 0 auto;
-		background: url('#{$images-path}map-ggl-bg.png') center / cover no-repeat transparent;
+		background: url('#{$images-path}map-ggl-bg.webp') center / cover no-repeat transparent;
 		
 		@include media('<=xs') {
 			border-radius: 50px;

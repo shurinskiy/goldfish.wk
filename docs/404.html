@@ -1,0 +1,120 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+	<meta name="description" content="Consulting services">
+	<link rel="shortcut icon" href="images/favicon.ico"> 
+	<link rel="stylesheet" href="style.css"> 
+	<title>Consulting services</title> 
+</head> 
+<body class=""> 
+ 
+<header class="header "> 
+	<div class="header__inner container">
+		<a class="header__logo" href="./" alt="Logo">
+			<img src="./images/logo.svg" loading="lazy" alt="Logo">
+			<img src="./images/logo-mobile.svg" loading="lazy" alt="Logo">
+		</a>
+		<div class="header__navi h-navi ">
+			<button class="h-navi__close" title="Mobile menu close"></button>
+			<div class="h-navi__inner">
+				<nav class="h-navi__menu" data-scroll-lock-scrollable>
+					<a class="h-navi__link" href="./about.html">О нас</a>
+					<a class="h-navi__link" href="./">Для гостей Тайланда</a>
+					<a class="h-navi__link" href="./">Для бизнеса</a>
+				</nav>
+				<div class="h-navi__lang">
+					<a class="active" href="./">RU</a>/<a href="./">EN</a>
+				</div>
+				<div class="h-navi__contacts">
+					<a class="h-navi__button h-navi__button_tel" href="./contacts.html"><span>Контакты</span></a>
+					<a class="h-navi__button h-navi__button_tgm" href="./"><span>Задать Вопрос</span></a>
+				</div>
+			</div>
+		</div>
+		<button class="header__navi-toggle" title="Mobile menu toggle"></button>
+	</div>
+</header>
+
+<section class="lost top mb1">
+	<h2 class="lost__title mb2 container">404</h2>
+	<h3 class="lost__subtitle title title_subtitle mb3 container">Простите, но у нас возникли проблемы с поиском<br/> страницы, которую Вы запрашиваете</h3>
+	<div class="lost__inner container">
+		<p class="lost__text mb3">Переходите на <a href="/">главную</a> страницу или воспользуйтесь поиском:</p>
+		<div class="lost__find find">
+			<form class="find__search">
+				<input type="text" placeholder="Искать в услугах">
+				<input type="submit" value="" title="Search">
+			</form>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="footer__top container">
+		<div class="footer__side">
+			<nav class="footer__navi">
+				<a href="./">О нас</a>
+				<a href="./">Для Гостей Тайланда</a>
+				<a href="./">Для Бизнеса</a>
+			</nav>
+			<a class="footer__logo" href="./" alt="Logo">
+				<img src="./images/logo-bottom.svg" loading="lazy" alt="Logo">
+			</a>
+		</div>
+		<div class="footer__contacts">
+			<a class="footer__tel" href="tel:+66902730920">+66 90 27 30 920</a>
+			<a class="footer__map" href="https://maps.app.goo.gl/zBVPZJ49hVPE3U6P6?g_st=ic">Мы на карте</a>
+		</div>
+	</div>
+	<div class="footer__bottom">
+		<div class="footer__b-inner container">
+			<span>Copyright &copy;</span>
+		</div>
+	</div>
+</footer>
+
+<div class="modal__hidden">
+	<div id="request">
+		<div class="form">
+			<h2 class="form__title">Оставьте свои контакты<br> и наши менеджеры отправят вам информацию в ближайшее время</h2>
+			<div class="form__body">
+				<label class="form__field form__field_info">
+					<input type="text" name="form_info" placeholder="Информация">
+				</label>
+				<label class="form__field form__field_text">
+					<input type="text" name="form_name" placeholder="Имя">
+				</label>
+				<label class="form__field form__field_region">
+					<input type="text" name="form_region" placeholder="Регион">
+				</label>
+				<label class="form__field form__field_text">
+					<input type="text" name="form_phone" placeholder="Mob/Tlg/Whts">
+				</label>
+				<select name="form_theme" class="form__field form__field_sect">
+					<option value="Водительские права">Водительские права</option>
+					<option value="Регистрация компании">Регистрация компании</option>
+				</select>
+			</div>
+			<div class="form__alert"></div>
+			<div class="form__buttons">
+				<button class="form__button button button_fill-yellow">Отправить</button>
+			</div>
+		</div>
+	</div>
+	<div id="video">
+		<video controls preload="metadata" poster="./images/video-preview.webp">
+			<source src="./images/video-small.mp4" type="video/mp4" media="all and (max-width: 480px)">
+			<source src="./images/video.mp4" type="video/mp4">
+		</video>
+	</div>
+</div> 
+
+<script type="text/javascript" charset="utf-8" src="jquery.min.js"></script>
+<script src="common.js"></script>
+<script data-b24-form="inline/3/iyhyt6" data-skip-moving="true">
+	// (function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://cdn.bitrix24.com/b27307907/crm/form/loader_3.js');
+</script>
+</body> 
+</html>

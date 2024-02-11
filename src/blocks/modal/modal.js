@@ -24,7 +24,7 @@ import { selectTweaker } from "../../js/libs/selectTweaker";
 		}
 	}
 
-	const modal = makeModalFrame({ 
+	window.modal = makeModalFrame({ 
 		select: '.hero__title button, .card-b__button, .card-s__button, .card-a__button, .gallery__item, .detail__button, .hero-c__button', 
 		scrollLock,
 		open: function({ slideshow }, button) {
@@ -40,4 +40,5 @@ import { selectTweaker } from "../../js/libs/selectTweaker";
 			setPlayButton(this, this.querySelector('video.active'));
 		}
 	});
+
 })();

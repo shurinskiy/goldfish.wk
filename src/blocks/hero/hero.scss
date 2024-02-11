@@ -9,7 +9,7 @@
 	&__inner {
 		padding-top: 80px;
 		padding-bottom: 60px;
-		background: url('#{$images-path}bubble.png') top 60px left 55px / 40px 44px no-repeat, url('#{$images-path}bubble.png') bottom 35% left 145px / 28px 32px no-repeat, url('#{$images-path}bubble.png') top 50px right 120px / 78px 87px no-repeat, url('#{$images-path}bubble.png') bottom 55% right 80px / 40px 45px no-repeat;
+		background: url('#{$images-path}bubble.webp') top 60px left 55px / 40px 44px no-repeat, url('#{$images-path}bubble.webp') bottom 35% left 145px / 28px 32px no-repeat, url('#{$images-path}bubble.webp') top 50px right 120px / 78px 87px no-repeat, url('#{$images-path}bubble.webp') bottom 55% right 80px / 40px 45px no-repeat;
 		position: relative;
 
 		@include media('<=sm') {
@@ -19,7 +19,7 @@
 		@include media('<=xxs') {
 			padding-top: 50px;
 			padding-bottom: 40px;
-			background: url('#{$images-path}bubble.png') top 10px left 70px / 40px 44px no-repeat, url('#{$images-path}bubble.png') top 110px left 155px / 24px 28px no-repeat, url('#{$images-path}bubble.png') top 65px right -20px / 70px 80px no-repeat, url('#{$images-path}bubble.png') top 130px right 40px / 30px 35px no-repeat;
+			background: url('#{$images-path}bubble.webp') top 10px left 70px / 40px 44px no-repeat, url('#{$images-path}bubble.webp') top 110px left 155px / 24px 28px no-repeat, url('#{$images-path}bubble.webp') top 65px right -20px / 70px 80px no-repeat, url('#{$images-path}bubble.webp') top 130px right 40px / 30px 35px no-repeat;
 		}
 		
 		@include media('<=xxxs') {
@@ -32,7 +32,7 @@
 		content: '';
 		width: 237px;
 		height: 203px;
-		background: url('#{$images-path}hero-fish.png') center / contain no-repeat transparent;
+		background: url('#{$images-path}hero-fish.webp') center / contain no-repeat transparent;
 		position: absolute;
 		top: 45%;
 		left: -70px;
